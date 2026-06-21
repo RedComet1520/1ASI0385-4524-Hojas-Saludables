@@ -1,0 +1,18 @@
+.Seccion_formulario {
+    display: flex;
+    justify-content: flex-start; /* Lo pega a la izquierda */
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: green;
+}
+
+.contenido-izquierdo {
+    display: flex;
+    flex-direction: column; /* Imagen arriba, texto abajo */
+    align-items: flex-start;
+}
+
+.division-general-texto {
+    margin-top: 20px;
+}
