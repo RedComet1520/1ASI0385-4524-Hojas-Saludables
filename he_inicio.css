@@ -1,53 +1,211 @@
+/* RESET */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CABECERA */
+
 .top-header {
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  z-index: 100;
-  height: 90px;
+  height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 30px;
+
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px 20px;
-  margin-top: 0%;
-  top: 0%;
+  gap: 10px;
 }
 
-.Menu-Horizontal {
+.logo img {
+  width: 200px;
+  height: 100px;
+}
+
+.logo h2 {
+  color: #2f8a35;
+}
+
+.menu-horizontal {
   list-style: none;
   display: flex;
-  justify-content: space-around;
-  width: 50%;
-  max-width: 980px;
+  gap: 30px;
 }
 
-.Menu-Horizontal li a {
+.menu-horizontal a {
   text-decoration: none;
-  display: block;
-  padding: 10px 20px;
   color: black;
-  border-radius: 999px;
-  transition: 0.3s;
-  border-color: black;
 }
 
-.Menu-Horizontal li a:hover {
+.menu-horizontal a:hover {
   color: green;
 }
 
-.Menu-Vertical {
-  padding: 0;
-  position: absolute;
-  display: none;
-  list-style: none;
-  width: 200px;
-  background-color: rgb(198, 198, 198);
+/* CONTENIDO */
+
+.seccion-login {
+  display: flex;
+  min-height: calc(100vh - 80px);
 }
 
-.Menu-Horizontal li:hover .Menu-Vertical {
+/* PANEL IZQUIERDO */
+
+.panel-izquierdo {
+  width: 50%;
+
+  background-color: #2f8a35;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 40px;
+}
+
+.panel-izquierdo img {
+  width: 550px;
+  height: 300px;
+}
+
+.panel-izquierdo h1 {
+  margin-bottom: 20px;
+}
+
+.panel-izquierdo p {
+  font-size: 24px;
+  max-width: 500px;
+}
+
+/* PANEL DERECHO */
+
+.panel-derecho {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #f3f3f3;
+}
+
+/* FORMULARIO */
+
+.formulario-login {
+  background-color: white;
+
+  width: 400px;
+
+  padding: 30px;
+
+  border: 1px solid #ccc;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.tabs button {
+  flex: 1;
+
+  padding: 10px;
+
+  border: 1px solid #ccc;
+
+  background-color: #e9e9e9;
+
+  cursor: pointer;
+}
+
+.tabs button:hover {
+  background-color: #dcdcdc;
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo label {
   display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
-.top-header .logo {
-  height: 225px;
-  width: 225px;
+.campo input {
+  width: 100%;
+  padding: 10px;
+
+  border: 1px solid #999;
+}
+
+.btn-login {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+
+  background-color: #2f8a35;
+  color: white;
+
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #246a28;
+}
+
+.separador {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-google {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #999;
+
+  background-color: white;
+
+  cursor: pointer;
+}
+
+.registro {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.registro a {
+  color: #2f8a35;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .seccion-login {
+    flex-direction: column;
+  }
+
+  .panel-izquierdo,
+  .panel-derecho {
+    width: 100%;
+  }
+
+  .formulario-login {
+    width: 90%;
+    margin: 30px 0;
+  }
 }
