@@ -5,47 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hojas Saludables</title>
 
-    <link rel="stylesheet" href="./assets/styles/he_inicio.css" />
-    <link rel="stylesheet" href="./assets/styles/footer.css" />
-    <link rel="stylesheet" href="./assets/styles/seccion_sintomas.css" />
-    <link rel="stylesheet" href="./assets/styles/seccion_mis_plantas.css" />
-    <link rel="stylesheet" href="./assets/styles/seccion_consejo.css" />
-    <link rel="stylesheet" href="./assets/styles/seccion_escaneo_imagen.css" />
+    <link rel="stylesheet" href="he_inicio.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="seccion_sintomas.css" />
+    <link rel="stylesheet" href="seccion_mis_plantas.css" />
+    <link rel="stylesheet" href="seccion_consejo.css" />
+
+    <!-- CSS DE MIS 3 HU -->
+    <link rel="stylesheet" href="hu_ep07.css" />
   </head>
+
   <body>
     <!-- CABECERA -->
     <nav class="top-header">
       <div class="logo">
-        <img
-          height="150"
-          width="200"
-          src="./assets/images/Logo_letras_negras.png"
-          alt="Logo"
-        />
+        <a href="#inicio">
+          <img
+            height="150"
+            width="200"
+            src="imagenes/Logo_letras_negras.png"
+            alt="Logo Hojas Saludables"
+          />
+        </a>
       </div>
+
       <ul class="menu-horizontal">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Guías</a></li>
-        <li><a href="#">Diagnóstico</a></li>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#diagnostico">Diagnóstico</a></li>
+        <li><a href="#plantas">Mis plantas</a></li>
+        <li><a href="#guias">Guías</a></li>
+
+        <!-- MIS HU AGREGADAS -->
+        <li><a href="#hu32">Idioma</a></li>
+        <li><a href="#hu34">Mi perfil</a></li>
+        <li><a href="#hu36">Tutorial</a></li>
       </ul>
     </nav>
-    <!-- CONTENIDO PRINCIPAL -->
-    <section class="seccion-login">
-      <!-- LADO IZQUIERDO -->
+
+    <!-- INICIO / LOGIN -->
+    <section id="inicio" class="seccion-login">
       <div class="panel-izquierdo">
         <img
           height="150"
           width="200"
-          src="./assets/images/Logo_letras_blancas.png"
-          alt="Logo"
+          src="imagenes/Logo_letras_blancas.png"
+          alt="Logo Hojas Saludables"
         />
+
         <p>
           Diagnostica, monitorea y cuida tus plantas con inteligencia
           artificial.
         </p>
       </div>
 
-      <!-- LADO DERECHO -->
       <div class="panel-derecho">
         <div class="formulario-login">
           <div class="tabs">
@@ -61,7 +73,7 @@
 
             <div class="campo">
               <label>Contraseña:</label>
-              <input type="text" placeholder="contraseña" />
+              <input type="password" placeholder="contraseña" />
             </div>
 
             <button class="btn-login" type="submit">Iniciar sesión</button>
@@ -81,105 +93,76 @@
       </div>
     </section>
 
-    <!-- ESCANEO DE IMAGEN -->
-
-    <nav class="top-header">
-      <div class="logo">
-        <img src="./assets/images/Logo_letras_negras.png" alt="Logo" />
-      </div>
-
-      <ul class="menu-horizontal">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Guías</a></li>
-        <li><a href="#">Diagnóstico</a></li>
-        <li><a href="#">Consejos</a></li>
-      </ul>
-
-      <button class="btn-buscar">Buscar Planta</button>
-    </nav>
-
-    <section class="seccion-diagnostico">
-      <div class="texto-principal">
-        <h1>Diagnóstico por fotografía</h1>
-
-        <p>
-          Toma o sube una foto de tu planta para identificar enfermedades o
-          plagas al instante.
-        </p>
-
-        <button class="btn-subir">Subir foto</button>
-      </div>
-
-      <div class="contenedor-formulario">
-        <h2>Sube o toma una fotografía de tu planta</h2>
-
-        <div class="caja-imagen">
-          <h3>Selecciona una imagen</h3>
-
-          <p>Formatos aceptados: JPG, PNG, WEBP - Máx 10MB</p>
-
-          <button>Seleccionar desde galería</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- BUSQUEDA SINTOMAS -->
-
-    <section class="seccion-sintomas">
+    <!-- DIAGNÓSTICO / BÚSQUEDA DE SÍNTOMAS -->
+    <section id="diagnostico" class="seccion-sintomas">
       <div>
-        <h2>Buscar por sintomas</h2>
+        <h2>Buscar por síntomas</h2>
         <p>
-          Describe los sintomas de tu planta sin necesidad de foto para
+          Describe los síntomas de tu planta sin necesidad de foto para
           encontrar posibles enfermedades.
         </p>
       </div>
+
       <div class="sintomas-buscador">
-        <h3>Describe los sintomas</h3>
+        <h3>Describe los síntomas</h3>
+
         <div class="search-bar">
           <div>
             <img
-              src="./assets/images/search_icon-icons.com_64724.png"
-              alt=""
+              src="https://images.icon-icons.com/780/PNG/512/search_icon-icons.com_64724.png"
+              alt="Buscar"
             />
+
             <input
               type="text"
               id="Buscar"
               placeholder="Ej: Hojas amarillas, puntas secas, manchas marrones..."
             />
           </div>
+
           <button class="btn-agregar">Agregar</button>
         </div>
+
         <div>
-          <button class="btn-buscar">Buscar Sintomas</button>
+          <button class="btn-buscar">Buscar síntomas</button>
           <button class="btn-limpiar">Limpiar todo</button>
         </div>
       </div>
+
       <div class="sintomas-coincidencia">
-        <h3>Posibles coinsidencias</h3>
+        <h3>Posibles coincidencias</h3>
+
         <div class="resultado">
           <div class="porcentaje-alto">87%</div>
+
           <div class="resultado-contenido">
-            <h3>Deficiencia de hierro (clorosis ferrica)</h3>
+            <h3>Deficiencia de hierro</h3>
             <p>
               Las hojas jóvenes se vuelven amarillas manteniendo las nervaduras
-              verdes. Más frecuente en suelos alcalinos.
+              verdes. Es más frecuente en suelos alcalinos.
             </p>
           </div>
+
           <button class="btn-detalles">Ver detalles</button>
         </div>
+
         <div class="resultado">
           <div class="porcentaje-alto">74%</div>
+
           <div class="resultado-contenido">
-            <h3>Exceso de riego / Raíz asfixiada</h3>
+            <h3>Exceso de riego</h3>
             <p>
               El encharcamiento impide la absorción de nutrientes, provocando
-              amarillamiento y necrosis en puntas.
+              amarillamiento y necrosis en las puntas.
             </p>
           </div>
+
           <button class="btn-detalles">Ver detalles</button>
         </div>
+
         <div class="resultado">
           <div class="porcentaje-medio">52%</div>
+
           <div class="resultado-contenido">
             <h3>Verticilosis</h3>
             <p>
@@ -187,14 +170,14 @@
               se amarillean y se secan desde la base.
             </p>
           </div>
+
           <button class="btn-detalles">Ver detalles</button>
         </div>
       </div>
     </section>
 
     <!-- MIS PLANTAS -->
-
-    <section class="seccion-plantas">
+    <section id="plantas" class="seccion-plantas">
       <div class="mis-pantas-descripcion">
         <h2>Mis plantas</h2>
         <p>
@@ -202,115 +185,134 @@
           primero.
         </p>
       </div>
-      <button class="btn-agregar-planta">+ Nueva Planta</button>
+
+      <button class="btn-agregar-planta">+ Nueva planta</button>
+
       <div class="plantas">
         <div class="card-planta">
           <img
-            src="./assets/images/CHERRY_TINYTIM.jpg"
-            alt=""
+            src="https://km100semillasorganicas.uy/cdn/shop/files/CHERRY_TINYTIM.jpg"
+            alt="Tomate Cherry"
           />
+
           <div class="card-planta-descripcion">
             <div class="card-top">
               <div class="planta-nombre">
                 <h3>Tomate Cherry</h3>
                 <p>Solanum lycopersicum</p>
               </div>
+
               <button class="btn-favorito">
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/7093/7093736.png"
-                  alt=""
+                  alt="Favorito"
                 />
               </button>
             </div>
+
             <div class="planta-etiqueta-r">Riesgo</div>
           </div>
         </div>
+
         <div class="card-planta">
           <img
             src="https://km100semillasorganicas.uy/cdn/shop/files/CHERRY_TINYTIM.jpg"
-            alt=""
+            alt="Tomate Cherry"
           />
+
           <div class="card-planta-descripcion">
             <div class="card-top">
               <div class="planta-nombre">
                 <h3>Tomate Cherry</h3>
                 <p>Solanum lycopersicum</p>
               </div>
+
               <button class="btn-favorito">
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/7093/7093736.png"
-                  alt=""
+                  alt="Favorito"
                 />
               </button>
             </div>
+
             <div class="planta-etiqueta-s">Sano</div>
           </div>
         </div>
+
         <div class="card-planta">
           <img
             src="https://km100semillasorganicas.uy/cdn/shop/files/CHERRY_TINYTIM.jpg"
-            alt=""
+            alt="Tomate Cherry"
           />
+
           <div class="card-planta-descripcion">
             <div class="card-top">
               <div class="planta-nombre">
                 <h3>Tomate Cherry</h3>
                 <p>Solanum lycopersicum</p>
               </div>
+
               <button class="btn-favorito">
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/7093/7093736.png"
-                  alt=""
+                  alt="Favorito"
                 />
               </button>
             </div>
+
             <div class="planta-etiqueta-s">Sano</div>
           </div>
         </div>
+
         <div class="card-planta">
           <img
             src="https://km100semillasorganicas.uy/cdn/shop/files/CHERRY_TINYTIM.jpg"
-            alt=""
+            alt="Tomate Cherry"
           />
+
           <div class="card-planta-descripcion">
             <div class="card-top">
               <div class="planta-nombre">
                 <h3>Tomate Cherry</h3>
                 <p>Solanum lycopersicum</p>
               </div>
+
               <button class="btn-favorito">
                 <img
                   src="https://cdn-icons-png.flaticon.com/512/7093/7093736.png"
-                  alt=""
+                  alt="Favorito"
                 />
               </button>
             </div>
+
             <div class="planta-etiqueta-s">Sano</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONSEJO -->
-
-    <section class="seccion-consejo">
+    <!-- GUÍAS / CONSEJO DEL DÍA -->
+    <section id="guias" class="seccion-consejo">
       <div class="consejo-descripcion">
-        <h2>Consejo del dia</h2>
+        <h2>Consejo del día</h2>
         <p>
-          Aprende algo nuevo sobre jardineria cada dia que utilizes Hojas
-          Saludables
+          Aprende algo nuevo sobre jardinería cada día que utilices Hojas
+          Saludables.
         </p>
       </div>
+
       <div class="consejo-contenido">
         <div class="contenido-top">
           <h3>Consejo del día - Lunes 9 jun 2026</h3>
+
           <button class="btn-favorito">
             <img
               src="https://cdn-icons-png.flaticon.com/512/7093/7093736.png"
-              alt=""
+              alt="Favorito"
             />
           </button>
         </div>
+
         <div class="contenido-bottom">
           <h2>
             El agua de lluvia es más beneficiosa para las plantas que el agua
@@ -318,16 +320,19 @@
             cloro. Si puedes, recolecta agua de lluvia en un recipiente y úsala
             en tus riegos.
           </h2>
+
           <img
             src="https://www.pngkey.com/png/full/41-415266_tomato-vector-leaf-leaf-icon.png"
-            alt=""
+            alt="Hoja"
           />
         </div>
       </div>
+
       <div class="card-consejo-guardado">
         <div class="card-titulo">
           <h3>Consejos guardados</h3>
         </div>
+
         <div class="card-consejo">
           <div class="card-etiqueta">Guardado el 5 Jun</div>
           <p>
@@ -336,6 +341,7 @@
             tiempo.
           </p>
         </div>
+
         <div class="card-consejo">
           <div class="card-etiqueta">Guardado el 3 Jun</div>
           <p>
@@ -347,71 +353,357 @@
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- HU-32: CAMBIO DE IDIOMA -->
+    <section id="hu32" class="seccion-hu">
+      <div class="hu-encabezado">
+        <span class="hu-etiqueta">HU-32 · EP-07</span>
+        <h2>Cambio de idioma de la aplicación</h2>
+        <p>
+          Como usuario de Hojas Saludables, quiero poder cambiar el idioma de la
+          aplicación entre español e inglés para usarla en el idioma de mi
+          preferencia.
+        </p>
+      </div>
 
+      <div class="hu-grid dos-columnas">
+        <div class="hu-card">
+          <h3>Idioma de la aplicación</h3>
+          <p class="texto-secundario">
+            Selecciona el idioma que deseas usar dentro de la plataforma.
+          </p>
+
+          <div class="opciones-idioma">
+            <label class="opcion-seleccionada">
+              <input type="radio" name="idioma" checked />
+              <div>
+                <strong>Español</strong>
+                <p>Idioma actual de la aplicación.</p>
+              </div>
+            </label>
+
+            <label>
+              <input type="radio" name="idioma" />
+              <div>
+                <strong>English</strong>
+                <p>Use the application in English.</p>
+              </div>
+            </label>
+          </div>
+
+          <div class="botones-acciones">
+            <button class="btn-principal">Guardar cambios</button>
+            <button class="btn-secundario">Restaurar español</button>
+          </div>
+        </div>
+
+        <div class="hu-card">
+          <h3>Vista previa</h3>
+          <p class="texto-secundario">
+            Los textos se actualizarán sin cerrar sesión ni perder datos.
+          </p>
+
+          <div class="preview-box">
+            <h4>Mis plantas</h4>
+            <p>Diagnostica, monitorea y cuida tus plantas.</p>
+            <button class="btn-mini">Nueva planta</button>
+          </div>
+
+          <div class="preview-box">
+            <h4>My plants</h4>
+            <p>Diagnose, monitor and take care of your plants.</p>
+            <button class="btn-mini">New plant</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="criterios-card">
+        <h3>Criterios de aceptación</h3>
+
+        <div class="criterios-grid">
+          <div>
+            <strong>Cambiar idioma a inglés</strong>
+            <p>
+              El usuario selecciona “English” y la aplicación actualiza sus
+              textos sin cerrar sesión.
+            </p>
+          </div>
+
+          <div>
+            <strong>Restaurar idioma original</strong>
+            <p>
+              El usuario selecciona “Español” y la interfaz vuelve al idioma
+              anterior sin pérdida de datos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HU-34: CONFIGURACIÓN DE PERFIL -->
+    <section id="hu34" class="seccion-hu">
+      <div class="hu-encabezado">
+        <span class="hu-etiqueta">HU-34 · EP-07</span>
+        <h2>Configuración de perfil de usuario</h2>
+        <p>
+          Como usuario registrado, quiero editar mi perfil para mantener mis
+          datos personales y preferencias actualizados dentro de la aplicación.
+        </p>
+      </div>
+
+      <div class="hu-grid dos-columnas">
+        <div class="hu-card">
+          <h3>Datos personales</h3>
+          <p class="texto-secundario">
+            Actualiza la información visible de tu cuenta.
+          </p>
+
+          <div class="perfil-foto">
+            <div class="avatar">AM</div>
+
+            <div>
+              <strong>Foto de perfil</strong>
+              <p>Cambia tu imagen para identificar tu cuenta.</p>
+              <button class="btn-secundario">Cambiar foto</button>
+            </div>
+          </div>
+
+          <form class="formulario-hu">
+            <div class="campo-hu">
+              <label>Nombre completo</label>
+              <input type="text" value="Adriano Mucha" />
+            </div>
+
+            <div class="campo-hu">
+              <label>Correo electrónico</label>
+              <input type="email" value="usuario@correo.com" />
+            </div>
+
+            <div class="campo-hu">
+              <label>Preferencia principal</label>
+              <select>
+                <option>Recibir recordatorios de riego</option>
+                <option>Recibir alertas de enfermedades</option>
+                <option>Recibir consejos semanales</option>
+              </select>
+            </div>
+
+            <button class="btn-principal" type="button">Guardar perfil</button>
+          </form>
+        </div>
+
+        <div class="hu-card">
+          <h3>Cambiar contraseña</h3>
+          <p class="texto-secundario">
+            Actualiza tu contraseña para proteger tu cuenta.
+          </p>
+
+          <form class="formulario-hu">
+            <div class="campo-hu">
+              <label>Contraseña actual</label>
+              <input type="password" placeholder="Ingresa tu contraseña actual" />
+            </div>
+
+            <div class="campo-hu">
+              <label>Nueva contraseña</label>
+              <input type="password" placeholder="Ingresa la nueva contraseña" />
+            </div>
+
+            <div class="campo-hu">
+              <label>Confirmar nueva contraseña</label>
+              <input type="password" placeholder="Repite la nueva contraseña" />
+            </div>
+
+            <button class="btn-principal" type="button">
+              Confirmar cambio
+            </button>
+          </form>
+
+          <div class="mensaje-exito">
+            ✓ Los cambios se mostrarán inmediatamente en la interfaz.
+          </div>
+        </div>
+      </div>
+
+      <div class="criterios-card">
+        <h3>Criterios de aceptación</h3>
+
+        <div class="criterios-grid">
+          <div>
+            <strong>Actualizar nombre y foto</strong>
+            <p>
+              El usuario modifica su nombre o foto y presiona “Guardar perfil”.
+            </p>
+          </div>
+
+          <div>
+            <strong>Cambiar contraseña</strong>
+            <p>
+              El usuario ingresa su contraseña actual, la nueva contraseña y la
+              confirmación.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HU-36: TUTORIAL INTERACTIVO -->
+    <section id="hu36" class="seccion-hu">
+      <div class="hu-encabezado">
+        <span class="hu-etiqueta">HU-36 · EP-07</span>
+        <h2>Tutorial interactivo de bienvenida</h2>
+        <p>
+          Como usuario nuevo, quiero pasar por un tutorial interactivo al iniciar
+          la app por primera vez para aprender a usar las funciones principales
+          sin ayuda externa.
+        </p>
+      </div>
+
+      <div class="tutorial-hero">
+        <div>
+          <span class="hu-etiqueta">Primera vez en Hojas Saludables</span>
+          <h3>Aprende a cuidar tus plantas en pocos pasos</h3>
+          <p>
+            El tutorial resalta las funciones principales: diagnóstico, plantas
+            y recordatorios.
+          </p>
+        </div>
+
+        <div class="botones-acciones">
+          <button class="btn-principal">Comenzar tutorial</button>
+          <button class="btn-secundario">Saltar</button>
+        </div>
+      </div>
+
+      <div class="pasos-tutorial">
+        <article class="paso-card activo">
+          <div class="numero-paso">1</div>
+          <h3>Diagnóstico</h3>
+          <p>
+            La guía muestra cómo subir una foto o describir síntomas para
+            detectar posibles enfermedades.
+          </p>
+          <button class="btn-mini">Siguiente</button>
+        </article>
+
+        <article class="paso-card">
+          <div class="numero-paso">2</div>
+          <h3>Mis plantas</h3>
+          <p>
+            El usuario aprende a registrar plantas, revisar su estado y marcar
+            prioridades.
+          </p>
+          <button class="btn-mini">Siguiente</button>
+        </article>
+
+        <article class="paso-card">
+          <div class="numero-paso">3</div>
+          <h3>Recordatorios</h3>
+          <p>
+            El sistema enseña cómo activar alertas de riego, cuidado y
+            seguimiento.
+          </p>
+          <button class="btn-mini">Finalizar</button>
+        </article>
+      </div>
+
+      <div class="criterios-card">
+        <h3>Criterios de aceptación</h3>
+
+        <div class="criterios-grid">
+          <div>
+            <strong>Completar tutorial</strong>
+            <p>
+              El usuario presiona “Comenzar tutorial” y avanza por las funciones
+              principales.
+            </p>
+          </div>
+
+          <div>
+            <strong>Saltar tutorial</strong>
+            <p>
+              El usuario presiona “Saltar” y accede directamente a la pantalla
+              principal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <section id="footer">
       <footer class="footer">
         <div class="footer-container">
-          <!-- Logo y nombre de sitio -->
           <div class="footer-brand">
             <img
               src="imagenes/Logo_letras_negras.png"
-              alt="Logo"
+              alt="Logo Hojas Saludables"
               class="footer-logo"
             />
             <p>Hojas Saludables</p>
             <small>© 2026 Todos los derechos reservados</small>
           </div>
 
-          <!-- Enlaces legales -->
           <div class="footer-links">
             <h4>Legal</h4>
+
+            <a href="#" target="_self">Política de Seguridad</a>
+
             <a
               href="https://www.plantfile.com/PlantFile_Privacy_Policy.pdf"
               target="_self"
-              >Política de Privacidad</a
             >
-            <!-- Dentro de href llama a un documento pdf con la poltica-->
+              Política de Privacidad
+            </a>
+
             <a
               href="https://imagen-ai.com/wp-content/uploads/2025/07/imagenai-end-user-agreement-updated-july-2025.pdf"
               target="_self"
-              >Términos y Condiciones</a
             >
-            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+              Términos y Condiciones
+            </a>
+
             <a
               href="https://cdn.www.gob.pe/uploads/document/file/272360/Ley%20N%C2%BA%2029733.pdf.pdf?v=1618338779"
               target="_self"
-              >Protección de Datos</a
             >
+              Protección de Datos
+            </a>
           </div>
 
-          <!-- Redes sociales con íconos personalizados -->
           <div class="footer-social">
             <h4>Síguenos</h4>
-            <a href="#"
-              ><img
+
+            <a href="#">
+              <img
                 src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
                 alt="Facebook"
                 class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
+              />
+            </a>
+
+            <a href="#">
+              <img
                 src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
                 alt="Instagram"
                 class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
+              />
+            </a>
+
+            <a href="#">
+              <img
                 src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
                 alt="LinkedIn"
                 class="social-icon"
-            /></a>
-            <a href="#"
-              ><img
+              />
+            </a>
+
+            <a href="#">
+              <img
                 src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
                 alt="Twitter"
                 class="social-icon"
-            /></a>
+              />
+            </a>
           </div>
         </div>
       </footer>

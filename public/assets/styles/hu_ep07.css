@@ -1,0 +1,343 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+/* ARREGLO DEL MENÚ PARA QUE NO SE ROMPA */
+.top-header {
+  min-height: 80px;
+  height: auto;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.menu-horizontal {
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu-horizontal a {
+  padding: 8px 4px;
+}
+
+/* SECCIONES DE LAS HU */
+.seccion-hu {
+  background-color: #f3f3f3;
+  padding: 40px 32px;
+  display: grid;
+  gap: 28px;
+}
+
+.hu-encabezado {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 28px;
+}
+
+.hu-encabezado h2 {
+  margin: 10px 0;
+  color: #2f8a35;
+}
+
+.hu-encabezado p {
+  color: #666;
+  max-width: 900px;
+}
+
+.hu-etiqueta {
+  display: inline-block;
+  background-color: #2f8a35;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hu-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.dos-columnas {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.hu-card {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 28px;
+  display: grid;
+  gap: 18px;
+}
+
+.hu-card h3 {
+  margin: 0;
+  color: #2f8a35;
+}
+
+.texto-secundario {
+  color: #777;
+  margin: 0;
+}
+
+/* BOTONES */
+.botones-acciones {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-principal {
+  background-color: #2f8a35;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  cursor: pointer;
+}
+
+.btn-principal:hover {
+  background-color: #246a28;
+}
+
+.btn-secundario {
+  background-color: white;
+  color: #2f8a35;
+  border: 1px solid #2f8a35;
+  padding: 12px 28px;
+  cursor: pointer;
+}
+
+.btn-secundario:hover {
+  background-color: #eaf5eb;
+}
+
+.btn-mini {
+  background-color: #2f8a35;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* HU-32 IDIOMA */
+.opciones-idioma {
+  display: grid;
+  gap: 16px;
+}
+
+.opciones-idioma label {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.opciones-idioma label:hover {
+  border-color: #2f8a35;
+}
+
+.opciones-idioma p {
+  margin: 6px 0 0 0;
+  color: #777;
+}
+
+.opcion-seleccionada {
+  background-color: #eaf5eb;
+  border-color: #2f8a35 !important;
+}
+
+.preview-box {
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  padding: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.preview-box h4 {
+  margin: 0;
+  color: #2f8a35;
+}
+
+.preview-box p {
+  margin: 0;
+  color: #777;
+}
+
+/* HU-34 PERFIL */
+.perfil-foto {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.perfil-foto p {
+  color: #777;
+  margin: 6px 0 12px 0;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #2f8a35;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.formulario-hu {
+  display: grid;
+  gap: 16px;
+}
+
+.campo-hu {
+  display: grid;
+  gap: 8px;
+}
+
+.campo-hu label {
+  font-weight: bold;
+}
+
+.campo-hu input,
+.campo-hu select {
+  padding: 12px;
+  border: 1px solid #999;
+  font-size: 15px;
+}
+
+.mensaje-exito {
+  background-color: #eaf5eb;
+  color: #2f8a35;
+  border: 1px solid #2f8a35;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+/* HU-36 TUTORIAL */
+.tutorial-hero {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+
+.tutorial-hero h3 {
+  color: #2f8a35;
+  margin-bottom: 8px;
+}
+
+.tutorial-hero p {
+  color: #777;
+}
+
+.pasos-tutorial {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.paso-card {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 24px;
+  display: grid;
+  gap: 14px;
+}
+
+.paso-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 24px #aaafb6;
+}
+
+.paso-card h3 {
+  margin: 0;
+  color: #2f8a35;
+}
+
+.paso-card p {
+  color: #777;
+}
+
+.numero-paso {
+  width: 42px;
+  height: 42px;
+  background-color: #2f8a35;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.activo {
+  border-color: #2f8a35;
+}
+
+/* CRITERIOS */
+.criterios-card {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 28px;
+}
+
+.criterios-card h3 {
+  margin-top: 0;
+  color: #2f8a35;
+}
+
+.criterios-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.criterios-grid div {
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  padding: 18px;
+}
+
+.criterios-grid p {
+  color: #666;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .dos-columnas,
+  .pasos-tutorial,
+  .criterios-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tutorial-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
