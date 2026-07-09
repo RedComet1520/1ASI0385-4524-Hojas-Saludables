@@ -82,13 +82,8 @@
 
 @media (max-width: 768px){
     .mis-plantas{
-        gap: 1rem;
+        gap: 2rem;
         height: 100%;
-        padding: 1rem;
-    }
-
-    .descripcion{
-        gap: 0.5rem;
     }
 
     .descripcion h1{
