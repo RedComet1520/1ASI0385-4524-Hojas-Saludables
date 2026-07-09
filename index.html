@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/styles/seccion_sintomas.css" />
     <link rel="stylesheet" href="assets/styles/seccion_mis_plantas.css" />
     <link rel="stylesheet" href="assets/styles/seccion_consejo.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
 
     <!-- CSS DE MIS 3 HU -->
     <link rel="stylesheet" href="assets/styles/hu_ep07.css" />
@@ -94,198 +95,128 @@
     </section>
 
     <!-- DIAGNÓSTICO / BÚSQUEDA DE SÍNTOMAS -->
-    <section id="diagnostico" class="seccion-sintomas">
-      <div>
-        <h2>Buscar por síntomas</h2>
-        <p>
-          Describe los síntomas de tu planta sin necesidad de foto para
-          encontrar posibles enfermedades.
-        </p>
-      </div>
-
-      <div class="sintomas-buscador">
-        <h3>Describe los síntomas</h3>
-
-        <div class="search-bar">
-          <div>
-            <img
-              src="https://images.icon-icons.com/780/PNG/512/search_icon-icons.com_64724.png"
-              alt="Buscar"
-            />
-
-            <input
-              type="text"
-              id="Buscar"
-              placeholder="Ej: Hojas amarillas, puntas secas, manchas marrones..."
-            />
-          </div>
-
-          <button class="btn-agregar">Agregar</button>
+    <section id="diagnostico" class="buscar-sintomas">
+      <div class="descripcion">
+            <h1>Buscar por sintomas</h1>
+            <p>Describe los sintomas de tu planta sin necesidad de foto para encontrar posibles enfermedades.</p>
         </div>
-
-        <div>
-          <button class="btn-buscar">Buscar síntomas</button>
-          <button class="btn-limpiar">Limpiar todo</button>
+        <div class="buscador">
+            <h3>Describe los sintomas</h3>
+            <div class="barra-busqueda">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="Buscar" placeholder="Ej: Hojas amarillas, puntas secas, manchas marrones">
+                <button class="btn-verde">Agregar</button>
+            </div>
+            <div class="botones">
+                <button class="btn-verde">Buscar enfermedades</button>
+                <button class="btn-blanco">Limpiar todo</button>
+            </div>
         </div>
-      </div>
-
-      <div class="sintomas-coincidencia">
-        <h3>Posibles coincidencias</h3>
-
-        <div class="resultado">
-          <div class="porcentaje-alto">87%</div>
-
-          <div class="resultado-contenido">
-            <h3>Deficiencia de hierro</h3>
-            <p>
-              Las hojas jóvenes se vuelven amarillas manteniendo las nervaduras
-              verdes. Es más frecuente en suelos alcalinos.
-            </p>
-          </div>
-
-          <button class="btn-detalles">Ver detalles</button>
+        <div class="coincidencias">
+            <h3>Posibles coincidencias</h3>
+            <div class="coincidencia-encontrada">
+                <div class="porcentaje-verde">
+                    <h2>87%</h2>
+                </div>
+                <div class="sintoma-descripcion">
+                    <h4>Deficiencia de hierro (Clorosis ferrica)</h4>
+                    <p>Las hojas jóvenes se vuelven amarillas manteniendo las nervaduras verdes. Más frecuente en suelos alcalinos.</p>
+                </div>
+                <button class="btn-bordes">Ver detalles</button>
+            </div>
+            <div class="coincidencia-encontrada">
+                <div class="porcentaje-verde">
+                    <h2>74%</h2>
+                </div>
+                <div class="sintoma-descripcion">
+                    <h4>Exceso de riego / Raíz asfixiada</h4>
+                    <p>El encharcamiento impide la absorción de nutrientes, provocando amarillamiento y necrosis en puntas.</p>
+                </div>
+                <button class="btn-bordes">Ver detalles</button>
+            </div>
+            <div class="coincidencia-encontrada">
+                <div class="porcentaje-naranja">
+                    <h2>52%</h2>
+                </div>
+                <div class="sintoma-descripcion">
+                    <h4>Verticilosis</h4>
+                    <p>Hongo del suelo que obstruye el sistema vascular. Las hojas bajan, se amarillean y se secan desde la base.</p>
+                </div>
+                <button class="btn-bordes">Ver detalles</button>
+            </div>
         </div>
-
-        <div class="resultado">
-          <div class="porcentaje-alto">74%</div>
-
-          <div class="resultado-contenido">
-            <h3>Exceso de riego</h3>
-            <p>
-              El encharcamiento impide la absorción de nutrientes, provocando
-              amarillamiento y necrosis en las puntas.
-            </p>
-          </div>
-
-          <button class="btn-detalles">Ver detalles</button>
-        </div>
-
-        <div class="resultado">
-          <div class="porcentaje-medio">52%</div>
-
-          <div class="resultado-contenido">
-            <h3>Verticilosis</h3>
-            <p>
-              Hongo del suelo que obstruye el sistema vascular. Las hojas bajan,
-              se amarillean y se secan desde la base.
-            </p>
-          </div>
-
-          <button class="btn-detalles">Ver detalles</button>
-        </div>
-      </div>
     </section>
 
     <!-- MIS PLANTAS -->
-    <section id="plantas" class="seccion-plantas">
-      <div class="mis-pantas-descripcion">
-        <h2>Mis plantas</h2>
-        <p>
-          Marca como favoritas las plantas prioritarias para verlas siempre
-          primero.
-        </p>
+    <section id="plantas" class="mis-plantas">
+      <div class="descripcion">
+        <h1>Mis plantas</h1>
+        <p>Marca como favoritas las plantas prioritarias para verlas siempre primero.</p>
       </div>
-
-      <button class="btn-agregar-planta">+ Nueva planta</button>
-
+      <button class="btn-bordes">+ Nueva Planta</button>
       <div class="plantas">
         <div class="card-planta">
           <img
             src="https://km100semillasorganicas.uy/cdn/shop/files/CHERRY_TINYTIM.jpg"
-            alt="Tomate Cherry"
+            alt=""
           />
-
           <div class="card-planta-descripcion">
             <div class="card-top">
               <div class="planta-nombre">
                 <h3>Tomate Cherry</h3>
                 <p>Solanum lycopersicum</p>
               </div>
-
-              <button class="btn-favorito">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/7093/7093736.png"
-                  alt="Favorito"
-                />
-              </button>
+              <i class="fa-solid fa-star"></i>
             </div>
-
-            <div class="planta-etiqueta-r">Riesgo</div>
+            <div class="etiqueta-rojo">Riesgo</div>
           </div>
         </div>
-
         <div class="card-planta">
           <img
             src="https://km100semillasorganicas.uy/cdn/shop/files/CHERRY_TINYTIM.jpg"
-            alt="Tomate Cherry"
+            alt=""
           />
-
           <div class="card-planta-descripcion">
             <div class="card-top">
               <div class="planta-nombre">
                 <h3>Tomate Cherry</h3>
                 <p>Solanum lycopersicum</p>
               </div>
-
-              <button class="btn-favorito">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/7093/7093736.png"
-                  alt="Favorito"
-                />
-              </button>
+              <i class="fa-regular fa-star"></i>
             </div>
-
-            <div class="planta-etiqueta-s">Sano</div>
+            <div class="etiqueta-verde">Sano</div>
           </div>
         </div>
-
         <div class="card-planta">
           <img
             src="https://km100semillasorganicas.uy/cdn/shop/files/CHERRY_TINYTIM.jpg"
-            alt="Tomate Cherry"
+            alt=""
           />
-
           <div class="card-planta-descripcion">
             <div class="card-top">
               <div class="planta-nombre">
                 <h3>Tomate Cherry</h3>
                 <p>Solanum lycopersicum</p>
               </div>
-
-              <button class="btn-favorito">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/7093/7093736.png"
-                  alt="Favorito"
-                />
-              </button>
+              <i class="fa-regular fa-star"></i>
             </div>
-
-            <div class="planta-etiqueta-s">Sano</div>
+            <div class="etiqueta-verde">Sano</div>
           </div>
         </div>
-
         <div class="card-planta">
           <img
             src="https://km100semillasorganicas.uy/cdn/shop/files/CHERRY_TINYTIM.jpg"
-            alt="Tomate Cherry"
+            alt=""
           />
-
           <div class="card-planta-descripcion">
             <div class="card-top">
               <div class="planta-nombre">
                 <h3>Tomate Cherry</h3>
                 <p>Solanum lycopersicum</p>
               </div>
-
-              <button class="btn-favorito">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/7093/7093736.png"
-                  alt="Favorito"
-                />
-              </button>
+              <i class="fa-regular fa-star"></i>
             </div>
-
-            <div class="planta-etiqueta-s">Sano</div>
+            <div class="etiqueta-verde">Sano</div>
           </div>
         </div>
       </div>
@@ -293,26 +224,15 @@
 
     <!-- GUÍAS / CONSEJO DEL DÍA -->
     <section id="guias" class="seccion-consejo">
-      <div class="consejo-descripcion">
-        <h2>Consejo del día</h2>
-        <p>
-          Aprende algo nuevo sobre jardinería cada día que utilices Hojas
-          Saludables.
-        </p>
+      <div class="descripcion">
+        <h1>Consejo del dia</h1>
+        <p>Aprende algo nuevo sobre jardineria cada dia que utilizes Hojas Saludables.</p>
       </div>
-
       <div class="consejo-contenido">
         <div class="contenido-top">
           <h3>Consejo del día - Lunes 9 jun 2026</h3>
-
-          <button class="btn-favorito">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/7093/7093736.png"
-              alt="Favorito"
-            />
-          </button>
+          <i class="fa-regular fa-star"></i>
         </div>
-
         <div class="contenido-bottom">
           <h2>
             El agua de lluvia es más beneficiosa para las plantas que el agua
@@ -320,30 +240,23 @@
             cloro. Si puedes, recolecta agua de lluvia en un recipiente y úsala
             en tus riegos.
           </h2>
-
-          <img
-            src="https://www.pngkey.com/png/full/41-415266_tomato-vector-leaf-leaf-icon.png"
-            alt="Hoja"
-          />
+          <i class="fa-brands fa-pagelines"></i>
         </div>
       </div>
-
       <div class="card-consejo-guardado">
         <div class="card-titulo">
           <h3>Consejos guardados</h3>
         </div>
-
         <div class="card-consejo">
-          <div class="card-etiqueta">Guardado el 5 Jun</div>
+          <div class="etiqueta-verde">Guardado el 5 Jun</div>
           <p>
             Las plantas en maceta necesitan fertilizante con más frecuencia que
             las del suelo porque el agua de riego lava los nutrientes con el
             tiempo.
           </p>
         </div>
-
         <div class="card-consejo">
-          <div class="card-etiqueta">Guardado el 3 Jun</div>
+          <div class="etiqueta-verde">Guardado el 3 Jun</div>
           <p>
             Rotar tus cultivos cada temporada previene la acumulación de
             patógenos específicos en el suelo y mejora los rendimientos a largo
