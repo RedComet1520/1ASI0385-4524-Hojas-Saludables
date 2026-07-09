@@ -1,92 +1,114 @@
-.seccion-plantas {
-  background-color: #f3f3f3;
-  padding: 32px 32px;
-  display: grid;
-  gap: 32px;
-  height: calc(100vh - 60px);
-  align-items: center;
+.mis-plantas{
+    background-color: #f3f3f3;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    height: calc(100vh - 3.75rem);
+    align-items: center;
 }
 
-.mis-pantas-descripcion p {
-  color: #aaafb6;
+.mis-plantas button{
+    place-self: end;
 }
 
-.seccion-plantas button {
-  place-self: end;
+.plantas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
 }
 
-.btn-agregar-planta {
-  padding: 12px 32px;
-  background: none;
-  border: 1px solid #2f8a35;
-  color: #2f8a35;
-  cursor: pointer;
+.card-planta{
+    background-color: white;
+    border: 0.063rem solid #d9d9d9;
+    border-radius: 1rem;
+    cursor: pointer;
 }
 
-.plantas {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+.card-planta:hover{
+    transform: translateY(-0.125rem);
+    box-shadow: 0rem 0.5rem 1.5rem #aaafb6;
 }
 
-.card-planta {
-  background-color: white;
-  border: 1px solid #d9d9d9;
-  border-radius: 15px;
-  cursor: pointer;
+.card-planta img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
-.card-planta:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 8px 24px #aaafb6;
+.card-planta-descripcion{
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
 }
 
-.card-planta img {
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.card-planta-descripcion {
-  display: grid;
-  padding: 16px;
-  gap: 16px;
+.btn-favorito{
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
-.card-top {
-  display: flex;
-  justify-content: space-between;
+.card-top i{
+    font-size: 2rem;
+    color: #FFA726;
 }
 
-.btn-favorito {
-  border: none;
-  background: transparent;
-  cursor: pointer;
+.etiqueta-rojo{
+    display: inline-block;
+    background-color: #ef5350;
+    opacity: 50%;
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: small;
+    place-self: start;
 }
 
-.btn-favorito img {
-  height: 40px;
-  width: 40px;
+.etiqueta-verde{
+    display: inline-block;
+    background-color: #2f8a35;
+    opacity: 50%;
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+    color: white;
+    font-size: small;
+    place-self: start;
 }
 
-.planta-etiqueta-r {
-  display: inline-block;
-  background-color: #ef5350;
-  opacity: 50%;
-  padding: 8px 32px;
-  border-radius: 50px;
-  color: white;
-  font-size: small;
-  place-self: start;
-}
+@media (max-width: 768px){
+    .mis-plantas{
+        gap: 1rem;
+        height: 100%;
+        padding: 1rem;
+    }
 
-.planta-etiqueta-s {
-  display: inline-block;
-  background-color: #2f8a35;
-  opacity: 50%;
-  padding: 8px 32px;
-  border-radius: 50px;
-  color: white;
-  font-size: small;
-  place-self: start;
+    .descripcion{
+        gap: 0.5rem;
+    }
+
+    .descripcion h1{
+        font-size: 1.5rem;
+    }
+
+    .plantas{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .card-top i{
+        font-size: 1.5rem;
+    }
+
+    .etiqueta-rojo{
+        padding: 0.25rem 1rem;
+    }
+
+    .etiqueta-verde{
+        padding: 0.25rem 1rem;
+    }
 }

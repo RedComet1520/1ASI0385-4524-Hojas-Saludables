@@ -1,123 +1,182 @@
-.seccion-sintomas {
-  background-color: #f3f3f3;
-  padding: 32px 32px;
-  display: grid;
-  gap: 8px;
-  height: calc(100vh - 60px);
-  align-items: center;
+.buscar-sintomas{
+    display: grid;
+    padding: 2rem;
+    gap: 1rem;
+    background-color: #f3f3f3;
+    height: calc(100vh - 3.75rem);
+
 }
 
-.seccion-sintomas p {
-  color: #aaafb6;
+.descripcion{
+    display: grid;
 }
 
-.search-bar img {
-  height: 35px;
-  opacity: 50%;
+.descripcion p{
+    color: #AAAFB6;
 }
 
-.search-bar {
-  display: flex;
-  background: white;
-  padding: 10px 20px;
-  border-radius: 12px;
-  border: 1px solid #aaafb6;
-  gap: 8px;
+.buscador{
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
 }
 
-.search-bar div {
-  display: flex;
-  align-items: center;
-  width: 100%;
+.barra-busqueda{
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+    border: 0.063rem solid #AAAFB6;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.5rem;
 }
 
-.btn-agregar {
-  background-color: #2f8a35;
-  border: none;
-  cursor: pointer;
-  color: white;
-  padding: 8px 32px;
+.barra-busqueda input[type="text"],
+.barra-busqueda select{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
-.search-bar input[type="text"],
-.search-bar select {
-  width: 100%;
-  padding: 16px 8px;
-  border: none;
-  outline: none;
-  font-size: 16px;
+.btn-verde{
+    padding: 1rem;
+    color: white;
+    background-color: #2E7D32;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
-.btn-buscar {
-  background-color: #2f8a35;
-  border: none;
-  cursor: pointer;
-  color: white;
-  padding: 12px 32px;
+.btn-verde:hover{
+    background-color: #6dc771;
 }
 
-.btn-limpiar {
-  border: none;
-  cursor: pointer;
-  padding: 12px 32px;
-  background-color: white;
+.btn-blanco{
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
-.sintomas-buscador h3 {
-  margin-top: 0px;
+.btn-blanco:hover{
+    background-color: #dde3eb;
 }
 
-.sintomas-buscador {
-  display: grid;
-  padding: 32px;
-  gap: 16px;
-  background-color: white;
-  border-radius: 12px;
+.coincidencias{
+    display: grid;
+    gap: 1rem;
 }
 
-.sintomas-coincidencia {
-  display: grid;
-  gap: 16px;
+.coincidencia-encontrada{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
 }
 
-.resultado {
-  display: flex;
-  background-color: white;
-  align-items: center;
-  padding: 16px 32px;
-  gap: 32px;
-  justify-content: space-between;
-  border-radius: 12px;
+.sintoma-descripcion{
+    width: 75%;
 }
 
-.porcentaje-alto {
-  border-radius: 50px;
-  border: 1px solid #2f8a35;
-  color: #2f8a35;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  padding: 10px;
+.sintoma-descripcion p{
+    color: #AAAFB6;
 }
 
-.porcentaje-medio {
-  border-radius: 50px;
-  border: 1px solid #ffa726;
-  color: #ffa726;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  padding: 10px;
+.porcentaje-verde{
+    display: flex;
+    color: #2E7D32;
+    border-radius: 50%;
+    border: 0.063rem solid #2E7D32;
+    height: 4rem;
+    width: 4rem;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-detalles {
-  border: 1px solid #2f8a35;
-  cursor: pointer;
-  color: #2f8a35;
-  padding: 12px 32px;
-  background: transparent;
+.porcentaje-naranja{
+    display: flex;
+    color: #FFA726;
+    border-radius: 50%;
+    border: 0.063rem solid #FFA726;
+    height: 4rem;
+    width: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-bordes{
+    padding: 1rem;
+    color: #2E7D32;
+    background-color: transparent;
+    border: 0.063rem solid #2E7D32;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-bordes:hover{
+    background-color: #dde3eb;
+}
+
+@media (max-width: 768px){
+    .buscar-sintomas{
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .barra-busqueda{
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .barra-busqueda input[type="text"],
+    .barra-busqueda select{
+        font-size: 0.8rem;
+    }
+
+    .coincidencia-encontrada{
+        padding: 0.5rem 1rem;
+        gap: 0.5rem;
+    }
+
+    .coincidencia-encontrada h2{
+        font-size: 1rem;
+    }
+
+    .porcentaje-verde{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .porcentaje-naranja{
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .sintoma-descripcion h4{
+        font-size: 0.9rem;
+    }
+
+    .sintoma-descripcion p{
+        font-size: 0.7rem;
+    }
+
+    .btn-verde{
+        padding: 0.5rem;
+    }
+
+    .btn-blanco{
+        padding: 0.5rem;
+    }
+
+    .btn-bordes{
+        padding: 0.5rem;
+    }
 }
