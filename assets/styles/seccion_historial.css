@@ -1,0 +1,212 @@
+/* SECCIÓN: HISTORIAL DE DIAGNÓSTICOS */
+
+.seccion-historial {
+  background-color: #f3f3f3;
+  padding: 40px 32px;
+  display: grid;
+  gap: 24px;
+}
+
+.historial-encabezado h2 {
+  margin: 0 0 6px 0;
+}
+
+.historial-encabezado p {
+  color: #666;
+  margin: 0;
+}
+
+/* TARJETAS DE RESUMEN */
+.historial-resumen {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.resumen-card {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.resumen-icono {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+.resumen-icono img {
+  width: 20px;
+  height: 20px;
+}
+
+.resumen-icono-alerta {
+  background-color: #fdecea;
+}
+
+.resumen-icono-ok {
+  background-color: #eaf5eb;
+}
+
+.resumen-etiqueta {
+  color: #777;
+  margin: 0 0 4px 0;
+  font-size: 14px;
+}
+
+.resumen-numero {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* BUSCADOR Y FILTROS */
+.historial-filtros {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.historial-buscador {
+  flex: 1;
+  min-width: 260px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+.historial-buscador img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+}
+
+.historial-buscador input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 15px;
+}
+
+.historial-select {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+/* LISTA DE REGISTROS */
+.historial-lista {
+  display: grid;
+  gap: 16px;
+}
+
+.historial-item {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 20px 24px;
+
+  display: grid;
+  grid-template-columns: 48px 1fr auto auto auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.historial-item-icono {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+.historial-item-info h3 {
+  margin: 0 0 4px 0;
+}
+
+.historial-item-fecha {
+  color: #999;
+  font-size: 14px;
+}
+
+.historial-item-estado {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.historial-item-enfermedad {
+  color: #b3541e;
+}
+
+.historial-item-sin-problemas {
+  color: #2f8a35;
+}
+
+.historial-item-acciones {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-icono {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #444;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+
+.btn-icono:hover {
+  color: #2f8a35;
+}
+
+/* BOTONES FINALES */
+.historial-acciones-finales {
+  display: flex;
+  gap: 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .historial-resumen {
+    grid-template-columns: 1fr;
+  }
+
+  .historial-item {
+    grid-template-columns: 40px 1fr;
+    row-gap: 10px;
+  }
+
+  .historial-item-fecha,
+  .historial-item-estado,
+  .historial-item-acciones {
+    grid-column: 2;
+  }
+}

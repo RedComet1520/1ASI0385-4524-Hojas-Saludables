@@ -1,0 +1,246 @@
+/* SECCIÓN: SEGUIMIENTO DEL ESTADO DE LA PLANTA */
+
+.seccion-seguimiento {
+  background-color: #f3f3f3;
+  padding: 40px 32px;
+  display: grid;
+  gap: 24px;
+}
+
+.seguimiento-encabezado h2 {
+  margin: 0 0 6px 0;
+}
+
+.seguimiento-encabezado p {
+  color: #666;
+  margin: 0;
+}
+
+/* TABS DE PLANTAS */
+.plantas-tabs {
+  display: flex;
+  gap: 12px;
+}
+
+.planta-tab {
+  border: 1px solid #2f8a35;
+  background-color: white;
+  color: #2f8a35;
+  border-radius: 50px;
+  padding: 10px 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.planta-tab.planta-tab-activa {
+  background-color: #2f8a35;
+  color: white;
+}
+
+/* TARJETA DE PLANTA DESTACADA */
+.planta-destacada-card {
+  background-color: #e6f2e6;
+  border-radius: 15px;
+  padding: 28px;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.planta-destacada-icono {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2f8a35;
+}
+
+.planta-destacada-info h3 {
+  margin: 0 0 4px 0;
+}
+
+.planta-destacada-tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.etiqueta-estado {
+  border-radius: 50px;
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+.etiqueta-recuperacion {
+  background-color: #fff4e5;
+  color: #b3701e;
+  border-color: #f0c98a;
+}
+
+.etiqueta-diagnosticos {
+  background-color: #e3f0fb;
+  color: #2c6fa8;
+  border-color: #b9d9f0;
+}
+
+.planta-destacada-salud {
+  background-color: white;
+  border-radius: 15px;
+  padding: 16px 28px;
+  text-align: center;
+}
+
+.salud-numero {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #2f8a35;
+}
+
+.salud-etiqueta {
+  margin: 0;
+  color: #777;
+  font-size: 13px;
+}
+
+/* ESTADÍSTICAS */
+.planta-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.planta-stat-card {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.planta-stat-valor {
+  margin: 6px 0 0 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* INDICADORES DE SALUD */
+.indicadores-salud-card {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 28px;
+
+  display: grid;
+  gap: 20px;
+}
+
+.indicadores-salud-card h3 {
+  margin: 0;
+}
+
+.indicador-barra {
+  display: grid;
+  gap: 8px;
+}
+
+.barra-fondo {
+  height: 8px;
+  border-radius: 50px;
+  background-color: #e4e4e4;
+  overflow: hidden;
+}
+
+.barra-relleno {
+  height: 100%;
+  border-radius: 50px;
+}
+
+.barra-hidratacion {
+  background-color: #3b82c4;
+}
+
+.barra-nutricion {
+  background-color: #e0a52e;
+}
+
+.barra-recuperacion {
+  background-color: #2f8a35;
+}
+
+/* SUBTABS: LÍNEA DE TIEMPO / REGISTRAR OBSERVACIÓN */
+.seguimiento-subtabs {
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.subtab {
+  border: none;
+  background: none;
+  padding: 12px 4px;
+  font-size: 15px;
+  color: #666;
+  cursor: pointer;
+}
+
+.subtab.subtab-activa {
+  color: #2f8a35;
+  font-weight: bold;
+  border-bottom: 2px solid #2f8a35;
+}
+
+/* LÍNEA DE TIEMPO */
+.linea-tiempo {
+  display: grid;
+  gap: 16px;
+}
+
+.linea-tiempo-item {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 20px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.linea-tiempo-texto h4 {
+  margin: 0 0 6px 0;
+}
+
+.linea-tiempo-fecha {
+  color: #999;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .planta-destacada-card {
+    grid-template-columns: auto 1fr;
+  }
+
+  .planta-destacada-salud {
+    grid-column: span 2;
+  }
+
+  .planta-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .linea-tiempo-item {
+    flex-direction: column;
+  }
+}
