@@ -1,4 +1,3 @@
-/* --- CONFIGURACIÓN GENERAL --- */
 .seccion-historial {
   font-family: Arial, sans-serif;
   max-width: 950px;
@@ -18,14 +17,12 @@
   margin: 0 0 30px 0;
 }
 
-/* --- CONTENEDOR DE DOS CUADROS HORIZONTALES --- */
 .historial-contenido-horizontal {
   display: flex;
-  flex-wrap: nowrap; /* Mantiene los cuadros uno al lado del otro */
-  gap: 40px; /* Espacio de separación entre ambos */
+  flex-wrap: nowrap; 
+  gap: 40px; 
 }
 
-/* --- CUADRO IZQUIERDO --- */
 .bloque-izquierdo-foto {
   flex: 1;
   display: flex;
@@ -59,10 +56,9 @@
 }
 
 .btn-ver-historial:hover {
-  transform: scale(1.02); /* Solo se agranda un poquito al pasar el mouse */
+  transform: scale(1.02); 
 }
 
-/* --- CUADRO DERECHO (SIEMPRE VISIBLE) --- */
 .bloque-derecho-fases {
   flex: 1;
   background-color: #ffffff;
@@ -98,7 +94,7 @@
 
 .fase-item {
   width: 80%;
-  background-color: #ffb74d; /* Color naranja/amarillo de tu diseño */
+  background-color: #ffb74d; 
   color: #111111;
   border: 1px solid #f57c00;
   padding: 10px;
