@@ -1,0 +1,132 @@
+.seccion-ar {
+  font-family: Arial, sans-serif;
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.ar-header h2 {
+  font-size: 1.8rem;
+  margin: 0 0 8px 0;
+  color: #111111;
+}
+
+.ar-header p {
+  color: #777777;
+  font-size: 1rem;
+  margin: 0 0 30px 0;
+}
+
+.ar-contenido {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.columna-izquierda,
+.columna-derecha {
+  flex: 1 1 400px;
+}
+
+.cuadro-escaner {
+  background-color: #4caf50;
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.cuadro-escaner:hover {
+  transform: scale(1.03);
+}
+
+.texto-escaner {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #111111;
+  margin: 0 0 15px 0;
+  letter-spacing: 0.5px;
+}
+
+.icono-camara {
+  width: 60px;
+  height: auto;
+}
+
+.btn-subir {
+  display: block;
+  width: 100%;
+  background-color: #2e7d32;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-subir:hover {
+  transform: scale(1.02);
+  background-color: #1b5e20;
+}
+
+.columna-derecha {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.columna-derecha h3 {
+  font-size: 1.1rem;
+  color: #111111;
+  margin: 0 0 20px 0;
+}
+
+.lista-iluminacion {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.renglon {
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #888888;
+  opacity: 0.6;
+}
+
+/*RESALTA EL REGLON ACTIVO DEPENDIENDO DE SI LA PLANTA TIENE LA ILUMINACION ADECUADA*/
+.renglon.activo {
+  background-color: #d4e157;
+  color: #111111;
+  border-color: #c0ca33;
+  opacity: 1;
+}
+
+.texto-resultado {
+  color: #777777;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
