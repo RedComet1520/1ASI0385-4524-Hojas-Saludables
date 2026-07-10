@@ -1,0 +1,135 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+.seccion_insumos {
+  font-family: Arial, sans-serif;
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* --- CABECERA DE LA SECCIÓN --- */
+.insumo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.insumo-descripcion h2 {
+  color: #111111;
+  font-size: 1.8rem;
+  margin: 0 0 8px 0;
+}
+
+.insumo-descripcion p {
+  color: #777777;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* --- BOTÓN ESCOGER PLANTA --- */
+.btn-escoger-planta {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  border: 1px solid #a5d6a7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-escoger-planta:hover {
+  background-color: #c8e6c9;
+}
+
+/* --- CONTENEDOR DE DOS CUADROS HORIZONTALES --- */
+.insumo-contenido {
+  display: flex;
+  flex-wrap: nowrap; /* Mantiene los bloques uno al lado del otro */
+  gap: 40px; /* Espacio de separación entre cuadros */
+}
+
+/* --- CUADRO IZQUIERDO (VERDE) --- */
+.contenido-imagen {
+  flex: 1;
+  background-color: #2e7d32; /* El fondo verde que faltaba */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contenedor-cuadrado {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+  margin-bottom: 20px;
+}
+
+.imagen-planta {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BOTÓN ANALIZAR INSUMOS (BLANCO INTERACTIVO) */
+.boton-analizar {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 12px 28px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.boton-analizar:hover {
+  transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+/* --- CUADRO DERECHO (TRANSPARENTE CON BORDES) --- */
+.insumos-necesarios {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.4) !important; /* Fondo translúcido */
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.insumos-necesarios h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+  color: #111111;
+}
+
+.subtitulo-insumo {
+  font-weight: bold;
+  color: #555555;
+  margin: 0 0 16px 0;
+  font-size: 1rem;
+}
+
+/* --- LISTA DE INSUMOS --- */
+.insumos-seleccionados ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.insumos-seleccionados li {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 12px;
+}
