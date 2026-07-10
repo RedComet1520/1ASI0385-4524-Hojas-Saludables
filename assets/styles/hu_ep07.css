@@ -341,3 +341,30 @@ body {
     align-items: flex-start;
   }
 }
+
+/* MENÚ HAMBURGUESA: ESCONDER OPCIONES EN MÓVIL (prioridad máxima, último CSS cargado) */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block !important; /* Mostrar botón hamburguesa en móviles */
+    color: black;
+  }
+
+  .menu-horizontal {
+    display: none !important; /* Ocultar TODAS las opciones por defecto */
+    flex-direction: column; /* Mostrarlas en vertical al activarse */
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5rem; /* Debajo del menú fijo */
+    left: 0;
+    z-index: 10;
+  }
+
+  .menu-horizontal.active {
+    display: flex !important; /* Mostrar menú solo al activar la clase */
+  }
+
+  .menu-horizontal li {
+    border-bottom: 1px solid #ccc; /* Líneas separadoras */
+  }
+}

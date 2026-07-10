@@ -4,7 +4,7 @@
     gap: 0.5rem;
     align-items: center;
     background-color: #f3f3f3;
-    height: calc(100vh - 3.75rem);
+    min-height: calc(100vh - 3.75rem);
 }
 
 .descripcion{
@@ -128,7 +128,7 @@
 @media (max-width: 768px){
     .buscar-sintomas{
         gap: 1rem;
-        height: 100%;
+        min-height: 100%;
     }
 
     .barra-busqueda{

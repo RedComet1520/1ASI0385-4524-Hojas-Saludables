@@ -3,7 +3,7 @@
     padding: 2rem;
     display: grid;
     gap: 2rem;
-    height: calc(100vh - 3.75rem);
+    min-height: calc(100vh - 3.75rem);
     align-items: center;
 }
 
@@ -83,7 +83,7 @@
 @media (max-width: 768px){
     .mis-plantas{
         gap: 2rem;
-        height: 100%;
+        min-height: 100%;
     }
 
     .descripcion h1{
