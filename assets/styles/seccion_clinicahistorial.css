@@ -1,0 +1,115 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+.seccion-historial {
+  font-family: Arial, sans-serif;
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.historial-header h2 {
+  color: #111111;
+  font-size: 1.8rem;
+  margin: 0 0 8px 0;
+}
+
+.historial-header p {
+  color: #777777;
+  font-size: 1rem;
+  margin: 0 0 30px 0;
+}
+
+/* --- CONTENEDOR DE DOS CUADROS HORIZONTALES --- */
+.historial-contenido-horizontal {
+  display: flex;
+  flex-wrap: nowrap; /* Mantiene los cuadros uno al lado del otro */
+  gap: 40px; /* Espacio de separación entre ambos */
+}
+
+/* --- CUADRO IZQUIERDO --- */
+.bloque-izquierdo-foto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-imagen-historial {
+  width: 100%;
+  height: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.imagen-historial {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-ver-historial {
+  background-color: #2e7d32;
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.btn-ver-historial:hover {
+  transform: scale(1.02); /* Solo se agranda un poquito al pasar el mouse */
+}
+
+/* --- CUADRO DERECHO (SIEMPRE VISIBLE) --- */
+.bloque-derecho-fases {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bloque-derecho-fases h3 {
+  font-size: 1.6rem;
+  margin: 0 0 12px 0;
+}
+
+.estado-saludable {
+  align-self: flex-start;
+  background-color: #a5d6a7;
+  color: #1b5e20;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.85rem;
+  margin-bottom: 25px;
+}
+
+.flujo-fases {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.fase-item {
+  width: 80%;
+  background-color: #ffb74d; /* Color naranja/amarillo de tu diseño */
+  color: #111111;
+  border: 1px solid #f57c00;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.flecha-fase {
+  color: #888888;
+  font-weight: bold;
+  font-size: 1rem;
+}

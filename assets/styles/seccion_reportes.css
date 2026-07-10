@@ -1,0 +1,70 @@
+.seccion-reportes {
+  font-family: Arial, sans-serif;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.reportes-header h2 {
+  color: #111111;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.grid-reportes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.tarjeta-reporte {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta-reporte:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.nombre-agricultor {
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
+  padding: 4px 0;
+}
+
+.texto-reporte {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.tarjeta-reporte.alerta-roja {
+  border-left: 6px solid #ef5350;
+  border-top: 1px solid #f5c6cb;
+  border-right: 1px solid #f5c6cb;
+  border-bottom: 1px solid #f5c6cb;
+}
+.tarjeta-reporte.alerta-roja .nombre-agricultor {
+  color: #c62828;
+}
+
+.tarjeta-reporte.alerta-verde {
+  border-left: 6px solid #66bb6a;
+  border-top: 1px solid #c3e6cb;
+  border-right: 1px solid #c3e6cb;
+  border-bottom: 1px solid #c3e6cb;
+}
+.tarjeta-reporte.alerta-verde .nombre-agricultor {
+  color: #2e7d32;
+}
