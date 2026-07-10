@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/styles/hu_ep07.css" />
     <link rel="stylesheet" href="assets/styles/seccion_seguimiento.css">
     <link rel="stylesheet" href="assets/styles/iconos.css" />
+    <link rel="stylesheet" href="planta_estilos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
 
     <!-- CSS DE MIS 3 HU -->
@@ -154,6 +155,38 @@
         </div>
     </section>
 
+    <!-- Modo offline -->
+    <section class="sec-modo-offline">
+      <div class="div-gral-offline">
+        <div class="offline-cabecera">
+          <div>
+            <h2>Diagnóstico de Campo (Modo Offline)</h2>
+            <p class="descripcion-offline">Accede a las herramientas básicas de análisis sin conexión a internet.</p>
+          </div>
+          <span class="badge-conexion offline">Sin conexión</span>
+        </div>
+
+        <div class="banner-sincronizacion">
+          <div class="sincro-info">
+            <span class="icono-sincro"></span>
+            <div>
+              <strong>Sincronización pendiente:</strong>
+              <p>Tienes 3 diagnósticos guardados localmente. Se subirán automáticamente al recuperar la señal.</p>
+            </div>
+          </div>
+          <span class="animacion-bucle"></span>
+        </div>
+
+        <div class="herramientas-offline-grid">
+          <div class="offline-card">
+            <h4>Nuevo Diagnóstico Local</h4>
+            <p>Toma una foto o registra los síntomas visuales de la planta. El reporte se procesará con la base de datos descargada.</p>
+            <button class="btn-offline-accion">Iniciar Escaneo de Campo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- MIS PLANTAS -->
     <section id="plantas" class="mis-plantas">
       <div class="descripcion">
@@ -224,6 +257,136 @@
               <i class="fa-regular fa-star"></i>
             </div>
             <div class="etiqueta-verde">Sano</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Calendario -->
+    <section class="sec-calendario-fertilizacion">
+      <div class="div-gral-calendario">
+        <div class="calendario-cabecera">
+          <div>
+            <h2>Cronograma Mensual de Cultivos</h2>
+            <p class="descripcion-calendario">Visualiza y organiza las fechas importantes de tu jardín.</p>
+          </div>
+          <div class="filtro-categoria-contenedor">
+            <label for="filtro-cat">Filtrar por:</label>
+            <select id="filtro-cat" class="select-categoria">
+              <option value="fertilizacion">Fertilización (Activo)</option>
+              <option value="riego">Riego</option>
+              <option value="poda">Poda</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calendario-layout">
+          <div class="calendario-tabla">
+            <div class="dia-semana">Lun</div>
+            <div class="dia-semana">Mar</div>
+            <div class="dia-semana">Mié</div>
+            <div class="dia-semana">Jue</div>
+            <div class="dia-semana">Vie</div>
+            <div class="dia-semana">Sáb</div>
+            <div class="dia-semana">Dom</div>
+            
+            <div class="dia-numero apagado">29</div>
+            <div class="dia-numero apagado">30</div>
+            <div class="dia-numero">1</div>
+            <div class="dia-numero evento-nutrientes" title="Día de Fertilización">2 <span class="punto-evento">🧪</span></div>
+            <div class="dia-numero">3</div>
+            <div class="dia-numero">4</div>
+            <div class="dia-numero">5</div>
+            <div class="dia-numero">6</div>
+            <div class="dia-numero">7</div>
+            <div class="dia-numero evento-nutrientes" title="Día de Fertilización">8 <span class="punto-evento">🧪</span></div>
+            <div class="dia-numero">9</div>
+            <div class="dia-numero hoy evento-completado" title="¡Tarea Realizada!">10 <span class="punto-evento">✅</span></div>
+            <div class="dia-numero">11</div>
+            <div class="dia-numero">12</div>
+            <div class="dia-numero">13</div>
+            <div class="dia-numero">14</div>
+            <div class="dia-numero">15</div>
+          </div>
+
+          <div class="tareas-panel-lateral">
+            <h4>Tareas de Hoy (Día 10)</h4>
+            <div class="item-tarea completada">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="tarea-1" checked disabled />
+                <label for="tarea-1">
+                  <strong>Abonado Nitrogenado</strong>
+                  <p>Área: Rosales del sector norte.</p>
+                </label>
+              </div>
+              <span class="status-badge completado-tag">Realizado</span>
+            </div>
+
+            <div class="item-tarea">
+              <div class="checkbox-wrapper">
+                <input type="checkbox" id="tarea-2" />
+                <label for="tarea-2">
+                  <strong>Revisión de Sustrato</strong>
+                  <p>Área: Suculentas y almácigos.</p>
+                </label>
+              </div>
+              <span class="status-badge pendiente-tag">Pendiente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comunidad -->
+    <section class="sec-comunidad-progreso">
+      <div class="div-gral-comunidad">
+        <div class="comunidad-cabecera">
+          <div>
+            <h2>Muro de la Comunidad My Garden</h2>
+            <p class="descripcion-comunidad">Comparte tus logros botánicos y recibe consejos de expertos.</p>
+          </div>
+        </div>
+
+        <div class="comunidad-layout">
+          <div class="crear-post-card">
+            <h4>Crear Nueva Publicación</h4>
+            <textarea placeholder="¿Qué progreso quieres compartir hoy con la comunidad? Pide consejos o muestra tus flores..." class="txt-post"></textarea>
+            
+            <div class="post-acciones-barra">
+              <label class="btn-subir-foto">
+                Seleccionar Foto Planta
+                <input type="file" style="display: none;" />
+              </label>
+              <button class="btn-publicar">Publicar en Comunidad</button>
+            </div>
+          </div>
+
+          <div class="feed-contenedor">
+            <h4>Feed Comunitario</h4>
+
+            <div class="tarjeta-post post-propio">
+              <div class="post-autor-cabecera">
+                <div class="autor-info">
+                  <strong>Tu Perfil (Jardinero)</strong>
+                  <span class="fecha-post">Hace 10 minutos</span>
+                </div>
+                <button class="btn-eliminar-post" title="Retirar publicación del feed público">Eliminar post</button>
+              </div>
+
+              <p class="post-texto">¿Alguien sabe por qué las puntas de mi Monstera se están volviendo marrones? Adjunto foto de su estado actual. ¡Gracias!</p>
+              
+              <div class="post-imagen-simulada">
+                <span>[ Vista Previa: Imagen de tu Planta ]</span>
+              </div>
+
+              <div class="post-comentarios-seccion">
+                <h5>Consejos de la Comunidad (1)</h5>
+                <div class="comentario-item">
+                  <strong>CarlosBotánico:</strong> Puede ser exceso de riego o falta de humedad ambiental. Intenta pulverizar las hojas.
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
