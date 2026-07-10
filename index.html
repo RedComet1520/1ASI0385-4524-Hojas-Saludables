@@ -10,16 +10,24 @@
     <link rel="stylesheet" href="assets/styles/seccion_sintomas.css" />
     <link rel="stylesheet" href="assets/styles/seccion_mis_plantas.css" />
     <link rel="stylesheet" href="assets/styles/seccion_consejo.css" />
-    <link rel="stylesheet" href="assets/styles/seccion-clima.css">
-    <link rel="stylesheet" href="assets/styles/seccion-ayuda.css">
-    <link rel="stylesheet" href="assets/styles/seccion_historial.css">
-    <link rel="stylesheet" href="assets/styles/seccion_recordatorios.css">
-    <link rel="stylesheet" href="assets/styles/hu_ep07.css" />
-    <link rel="stylesheet" href="assets/styles/seccion_seguimiento.css">
+    <link rel="stylesheet" href="assets/styles/seccion-clima.css" />
+    <link rel="stylesheet" href="assets/styles/seccion-ayuda.css" />
+    <link rel="stylesheet" href="assets/styles/seccion_historial.css" />
+    <link rel="stylesheet" href="assets/styles/seccion_recordatorios.css" />
+    <link rel="stylesheet" href="assets/styles/seccion_seguimiento.css" />
+   
+    <link rel="stylesheet" href="assets/styles/seccion_AR.css" />
+    <link rel="stylesheet" href="assets/styles/seccion_insumo.css"/>
+    <link rel="stylesheet" href="assets/styles/seccion_trading.css" />
     <link rel="stylesheet" href="assets/styles/iconos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
-
-    <!-- CSS DE MIS 3 HU -->
+    <link rel="stylesheet" href="assets/styles/he_formulario.css" />
+    <link rel="stylesheet" href="assets/styles/seccion_ayuda.css" />
+    <link rel="stylesheet" href="assets/styles/seccion_clinicohistorial.css" />
+    <link rel="stylesheet" href="assets/styles/seccion_reportes.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets/styles/hu_ep07.css" />
   </head>
 
@@ -104,61 +112,80 @@
     <!-- DIAGNÓSTICO / BÚSQUEDA DE SÍNTOMAS -->
     <section id="diagnostico" class="buscar-sintomas">
       <div class="descripcion">
-            <h1>Buscar por sintomas</h1>
-            <p>Describe los sintomas de tu planta sin necesidad de foto para encontrar posibles enfermedades.</p>
+        <h1>Buscar por sintomas</h1>
+        <p>
+          Describe los sintomas de tu planta sin necesidad de foto para
+          encontrar posibles enfermedades.
+        </p>
+      </div>
+      <div class="buscador">
+        <h3>Describe los sintomas</h3>
+        <div class="barra-busqueda">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            id="Buscar"
+            placeholder="Ej: Hojas amarillas, puntas secas, manchas marrones"
+          />
+          <button class="btn-verde">Agregar</button>
         </div>
-        <div class="buscador">
-            <h3>Describe los sintomas</h3>
-            <div class="barra-busqueda">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" id="Buscar" placeholder="Ej: Hojas amarillas, puntas secas, manchas marrones">
-                <button class="btn-verde">Agregar</button>
-            </div>
-            <div class="botones">
-                <button class="btn-verde">Buscar enfermedades</button>
-                <button class="btn-blanco">Limpiar todo</button>
-            </div>
+        <div class="botones">
+          <button class="btn-verde">Buscar enfermedades</button>
+          <button class="btn-blanco">Limpiar todo</button>
         </div>
-        <div class="coincidencias">
-            <h3>Posibles coincidencias</h3>
-            <div class="coincidencia-encontrada">
-                <div class="porcentaje-verde">
-                    <h2>87%</h2>
-                </div>
-                <div class="sintoma-descripcion">
-                    <h4>Deficiencia de hierro (Clorosis ferrica)</h4>
-                    <p>Las hojas jóvenes se vuelven amarillas manteniendo las nervaduras verdes. Más frecuente en suelos alcalinos.</p>
-                </div>
-                <button class="btn-bordes">Ver detalles</button>
-            </div>
-            <div class="coincidencia-encontrada">
-                <div class="porcentaje-verde">
-                    <h2>74%</h2>
-                </div>
-                <div class="sintoma-descripcion">
-                    <h4>Exceso de riego / Raíz asfixiada</h4>
-                    <p>El encharcamiento impide la absorción de nutrientes, provocando amarillamiento y necrosis en puntas.</p>
-                </div>
-                <button class="btn-bordes">Ver detalles</button>
-            </div>
-            <div class="coincidencia-encontrada">
-                <div class="porcentaje-naranja">
-                    <h2>52%</h2>
-                </div>
-                <div class="sintoma-descripcion">
-                    <h4>Verticilosis</h4>
-                    <p>Hongo del suelo que obstruye el sistema vascular. Las hojas bajan, se amarillean y se secan desde la base.</p>
-                </div>
-                <button class="btn-bordes">Ver detalles</button>
-            </div>
+      </div>
+      <div class="coincidencias">
+        <h3>Posibles coincidencias</h3>
+        <div class="coincidencia-encontrada">
+          <div class="porcentaje-verde">
+            <h2>87%</h2>
+          </div>
+          <div class="sintoma-descripcion">
+            <h4>Deficiencia de hierro (Clorosis ferrica)</h4>
+            <p>
+              Las hojas jóvenes se vuelven amarillas manteniendo las nervaduras
+              verdes. Más frecuente en suelos alcalinos.
+            </p>
+          </div>
+          <button class="btn-bordes">Ver detalles</button>
         </div>
+        <div class="coincidencia-encontrada">
+          <div class="porcentaje-verde">
+            <h2>74%</h2>
+          </div>
+          <div class="sintoma-descripcion">
+            <h4>Exceso de riego / Raíz asfixiada</h4>
+            <p>
+              El encharcamiento impide la absorción de nutrientes, provocando
+              amarillamiento y necrosis en puntas.
+            </p>
+          </div>
+          <button class="btn-bordes">Ver detalles</button>
+        </div>
+        <div class="coincidencia-encontrada">
+          <div class="porcentaje-naranja">
+            <h2>52%</h2>
+          </div>
+          <div class="sintoma-descripcion">
+            <h4>Verticilosis</h4>
+            <p>
+              Hongo del suelo que obstruye el sistema vascular. Las hojas bajan,
+              se amarillean y se secan desde la base.
+            </p>
+          </div>
+          <button class="btn-bordes">Ver detalles</button>
+        </div>
+      </div>
     </section>
 
     <!-- MIS PLANTAS -->
     <section id="plantas" class="mis-plantas">
       <div class="descripcion">
         <h1>Mis plantas</h1>
-        <p>Marca como favoritas las plantas prioritarias para verlas siempre primero.</p>
+        <p>
+          Marca como favoritas las plantas prioritarias para verlas siempre
+          primero.
+        </p>
       </div>
       <button class="btn-bordes">+ Nueva Planta</button>
       <div class="plantas">
@@ -233,7 +260,10 @@
     <section id="guias" class="seccion-consejo">
       <div class="descripcion">
         <h1>Consejo del dia</h1>
-        <p>Aprende algo nuevo sobre jardineria cada dia que utilizes Hojas Saludables.</p>
+        <p>
+          Aprende algo nuevo sobre jardineria cada dia que utilizes Hojas
+          Saludables.
+        </p>
       </div>
       <div class="consejo-contenido">
         <div class="contenido-top">
@@ -276,118 +306,131 @@
     <!--Seccion Ayuda-->
 
     <section class="ayuda">
-        <div class="descripcion">
-            <h1>Centro de Ayuda</h1>
-            <p>Encuntra respuestas rápidas a tus dudas sobre jardineria y uso de la app.</p>
+      <div class="descripcion">
+        <h1>Centro de Ayuda</h1>
+        <p>
+          Encuntra respuestas rápidas a tus dudas sobre jardineria y uso de la
+          app.
+        </p>
+      </div>
+      <div class="barra-busqueda">
+        <input
+          type="text"
+          id="Buscar"
+          placeholder="Ej: Hojas amarillas, puntas secas, manchas marrones"
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <div class="zona-preguntas">
+        <div class="pregunta">
+          <h4>¿Con qué frecuencia debo regar mis plantas?</h4>
+          <i class="fa-solid fa-angle-down"></i>
         </div>
-        <div class="barra-busqueda">
-            <input type="text" id="Buscar" placeholder="Ej: Hojas amarillas, puntas secas, manchas marrones">
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="pregunta">
+          <h4>¿Cómo identifico si mi planta tiene una plaga?</h4>
+          <i class="fa-solid fa-angle-down"></i>
         </div>
-        <div class="zona-preguntas">
-            <div class="pregunta">
-                <h4>¿Con qué frecuencia debo regar mis plantas?</h4>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div class="pregunta">
-                <h4>¿Cómo identifico si mi planta tiene una plaga?</h4>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div class="pregunta">
-                <h4>¿Cuándo y cómo debo fertilizar?</h4>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div class="pregunta">
-                <h4>¿Cómo funciona el diagnóstico por foto?</h4>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <div class="pregunta">
-                <h4>¿Puedo compartir mis diagnósticos con un agrónomo?</h4>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
+        <div class="pregunta">
+          <h4>¿Cuándo y cómo debo fertilizar?</h4>
+          <i class="fa-solid fa-angle-down"></i>
         </div>
+        <div class="pregunta">
+          <h4>¿Cómo funciona el diagnóstico por foto?</h4>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <div class="pregunta">
+          <h4>¿Puedo compartir mis diagnósticos con un agrónomo?</h4>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+      </div>
     </section>
 
     <!--Seccion Clima-->
 
     <section class="clima">
-        <h1>El Clima</h1>
-        <div class="clima-actual">
-            <p>lugar</p>
-            <h1>22°C</h1>
-            <p>Parcialmente nublado</p>
-            <div class="detalles-clima">
-                <div class="detalle-clima-sec">
-                    <h3>50%</h3>
-                    <p>Humedad</p>
-                </div>
-                <div class="detalle-clima-sec">
-                    <h3>35%</h3>
-                    <p>Prov. lluvia</p>
-                </div>
-                <div class="detalle-clima-sec">
-                    <h3>17 km/h</h3>
-                    <p>Viento</p>
-                </div>
-            </div>
+      <h1>El Clima</h1>
+      <div class="clima-actual">
+        <p>lugar</p>
+        <h1>22°C</h1>
+        <p>Parcialmente nublado</p>
+        <div class="detalles-clima">
+          <div class="detalle-clima-sec">
+            <h3>50%</h3>
+            <p>Humedad</p>
+          </div>
+          <div class="detalle-clima-sec">
+            <h3>35%</h3>
+            <p>Prov. lluvia</p>
+          </div>
+          <div class="detalle-clima-sec">
+            <h3>17 km/h</h3>
+            <p>Viento</p>
+          </div>
         </div>
-        <div class="pronosticos">
-            <h4>Pronostico de los proximos dias</h4>
-            <div class="pronostico-prox">
-                <div class="pronostico-dia-actual">
-                    <h4>Lun</h4>
-                    <i class="fa-solid fa-cloud-sun"></i>
-                    <p>22°</p>
-                </div>
-                <div class="pronostico-dia">
-                    <h4>Mar</h4>
-                    <i class="fa-solid fa-cloud-sun"></i>
-                    <p>23°</p>
-                </div>
-                <div class="pronostico-dia">
-                    <h4>Mie</h4>
-                    <i class="fa-solid fa-cloud-sun"></i>
-                    <p>24°</p>
-                </div>
-                <div class="pronostico-dia">
-                    <h4>Jue</h4>
-                    <i class="fa-solid fa-cloud-sun"></i>
-                    <p>25°</p>
-                </div>
-                <div class="pronostico-dia">
-                    <h4>Vie</h4>
-                    <i class="fa-solid fa-cloud-sun"></i>
-                    <p>24°</p>
-                </div>
-                <div class="pronostico-dia">
-                    <h4>Sab</h4>
-                    <i class="fa-solid fa-cloud-sun"></i>
-                    <p>23°</p>
-                </div>
-                <div class="pronostico-dia">
-                    <h4>Dom</h4>
-                    <i class="fa-solid fa-cloud-sun"></i>
-                    <p>22°</p>
-                </div>
-            </div>
+      </div>
+      <div class="pronosticos">
+        <h4>Pronostico de los proximos dias</h4>
+        <div class="pronostico-prox">
+          <div class="pronostico-dia-actual">
+            <h4>Lun</h4>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p>22°</p>
+          </div>
+          <div class="pronostico-dia">
+            <h4>Mar</h4>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p>23°</p>
+          </div>
+          <div class="pronostico-dia">
+            <h4>Mie</h4>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p>24°</p>
+          </div>
+          <div class="pronostico-dia">
+            <h4>Jue</h4>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p>25°</p>
+          </div>
+          <div class="pronostico-dia">
+            <h4>Vie</h4>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p>24°</p>
+          </div>
+          <div class="pronostico-dia">
+            <h4>Sab</h4>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p>23°</p>
+          </div>
+          <div class="pronostico-dia">
+            <h4>Dom</h4>
+            <i class="fa-solid fa-cloud-sun"></i>
+            <p>22°</p>
+          </div>
         </div>
-        <div class="recomendaciones-clima">
-            <h4>Recomendaciones segun el clima</h4>
-            <div class="mensaje-verde">
-                <h3>Buena ventilación</h3>
-                <p>El viento de 17 km/h ayuda a renovar el aire, pero si tienes plantas jóvenes, protégelas de corrientes fuertes para que no se deshidraten o quiebren.</p>
-            </div>
-            <div class="mensaje-naranja">
-                <h3>Riego moderado</h3>
-                <p>La temperatura es suave, así que el suelo no se seca tan rápido.</p>
-            </div>
-            <!--
+      </div>
+      <div class="recomendaciones-clima">
+        <h4>Recomendaciones segun el clima</h4>
+        <div class="mensaje-verde">
+          <h3>Buena ventilación</h3>
+          <p>
+            El viento de 17 km/h ayuda a renovar el aire, pero si tienes plantas
+            jóvenes, protégelas de corrientes fuertes para que no se deshidraten
+            o quiebren.
+          </p>
+        </div>
+        <div class="mensaje-naranja">
+          <h3>Riego moderado</h3>
+          <p>
+            La temperatura es suave, así que el suelo no se seca tan rápido.
+          </p>
+        </div>
+        <!--
             <div class="mensaje-rojo">
                 <h3>Revisa plagas</h3>
                 <p>El clima templado y la humedad media de 50% favorecen la aparición de pulgones o ácaros. Aprovecha para inspeccionar el envés de las hojas.</p>
             </div>
             -->
-        </div>
+      </div>
     </section>
 
     <!-- HU-32: CAMBIO DE IDIOMA -->
@@ -537,12 +580,18 @@
           <form class="formulario-hu">
             <div class="campo-hu">
               <label>Contraseña actual</label>
-              <input type="password" placeholder="Ingresa tu contraseña actual" />
+              <input
+                type="password"
+                placeholder="Ingresa tu contraseña actual"
+              />
             </div>
 
             <div class="campo-hu">
               <label>Nueva contraseña</label>
-              <input type="password" placeholder="Ingresa la nueva contraseña" />
+              <input
+                type="password"
+                placeholder="Ingresa la nueva contraseña"
+              />
             </div>
 
             <div class="campo-hu">
@@ -589,9 +638,9 @@
         <span class="hu-etiqueta">HU-36 · EP-07</span>
         <h2>Tutorial interactivo de bienvenida</h2>
         <p>
-          Como usuario nuevo, quiero pasar por un tutorial interactivo al iniciar
-          la app por primera vez para aprender a usar las funciones principales
-          sin ayuda externa.
+          Como usuario nuevo, quiero pasar por un tutorial interactivo al
+          iniciar la app por primera vez para aprender a usar las funciones
+          principales sin ayuda externa.
         </p>
       </div>
 
@@ -666,11 +715,14 @@
       </div>
     </section>
 
-        <!-- HISTORIAL: HISTORIAL DE DIAGNÓSTICOS -->
+    <!-- HISTORIAL: HISTORIAL DE DIAGNÓSTICOS -->
     <section id="historial" class="seccion-historial">
       <div class="historial-encabezado">
         <h2>Historial de diagnósticos</h2>
-        <p>Monitorea la evolución de tus plantas y consulta todos los diagnósticos anteriores.</p>
+        <p>
+          Monitorea la evolución de tus plantas y consulta todos los
+          diagnósticos anteriores.
+        </p>
       </div>
 
       <div class="historial-resumen">
@@ -742,8 +794,18 @@
       <div class="historial-lista">
         <article class="historial-item">
           <div class="historial-item-icono">
-            <svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22c5-1 8-6 8-11a8 8 0 0 0-8-8 8 8 0 0 0-8 8c0 5 3 10 8 11z"></path>
+            <svg
+              class="icono-svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M12 22c5-1 8-6 8-11a8 8 0 0 0-8-8 8 8 0 0 0-8 8c0 5 3 10 8 11z"
+              ></path>
               <path d="M12 22V11"></path>
               <path d="M12 11c0-4 2-6 5-7"></path>
             </svg>
@@ -762,15 +824,33 @@
 
           <div class="historial-item-acciones">
             <button class="btn-icono" title="Ver diagnóstico">
-              <svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                class="icono-svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                 <circle cx="12" cy="12" r="3"></circle>
               </svg>
             </button>
             <button class="btn-icono" title="Eliminar registro">
-              <svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                class="icono-svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <polyline points="3 6 5 6 21 6"></polyline>
-                <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                <path
+                  d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                ></path>
                 <line x1="10" y1="11" x2="10" y2="17"></line>
                 <line x1="14" y1="11" x2="14" y2="17"></line>
               </svg>
@@ -781,14 +861,32 @@
 
       <div class="historial-acciones-finales">
         <button class="btn-principal">
-          <svg class="icono-svg icono-boton" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+          <svg
+            class="icono-svg icono-boton"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+            ></path>
             <circle cx="12" cy="13" r="4"></circle>
           </svg>
           Nuevo diagnóstico
         </button>
         <button class="btn-secundario">
-          <svg class="icono-svg icono-boton" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <svg
+            class="icono-svg icono-boton"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
             <polyline points="7 10 12 15 17 10"></polyline>
             <line x1="12" y1="15" x2="12" y2="3"></line>
@@ -802,13 +900,24 @@
     <section id="recordatorios" class="seccion-recordatorios">
       <div class="recordatorios-encabezado">
         <h2>Recordatorios de riego</h2>
-        <p>Configura horarios de riego para cada planta y recibe notificaciones automáticas.</p>
+        <p>
+          Configura horarios de riego para cada planta y recibe notificaciones
+          automáticas.
+        </p>
       </div>
 
       <div class="recordatorios-grid">
         <div class="recordatorio-nuevo-card">
           <div class="recordatorio-nuevo-titulo">
-            <svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg
+              class="icono-svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
               <line x1="12" y1="5" x2="12" y2="19"></line>
               <line x1="5" y1="12" x2="19" y2="12"></line>
             </svg>
@@ -865,14 +974,32 @@
 
           <div class="botones-acciones">
             <button class="btn-principal">
-              <svg class="icono-svg icono-boton" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+              <svg
+                class="icono-svg icono-boton"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+                ></path>
                 <circle cx="12" cy="13" r="4"></circle>
               </svg>
               Nuevo diagnóstico
             </button>
             <button class="btn-secundario">
-              <svg class="icono-svg icono-boton" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <svg
+                class="icono-svg icono-boton"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <polyline points="7 10 12 15 17 10"></polyline>
                 <line x1="12" y1="15" x2="12" y2="3"></line>
@@ -899,14 +1026,34 @@
 
               <div class="recordatorio-item-acciones">
                 <button class="btn-icono" title="Editar recordatorio">
-                  <svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path>
+                  <svg
+                    class="icono-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+                    ></path>
                   </svg>
                 </button>
                 <button class="btn-icono" title="Eliminar recordatorio">
-                  <svg class="icono-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <svg
+                    class="icono-svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
                     <polyline points="3 6 5 6 21 6"></polyline>
-                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    <path
+                      d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                    ></path>
                     <line x1="10" y1="11" x2="10" y2="17"></line>
                     <line x1="14" y1="11" x2="14" y2="17"></line>
                   </svg>
@@ -936,18 +1083,33 @@
     <section id="seguimiento" class="seccion-seguimiento">
       <div class="seguimiento-encabezado">
         <h2>Seguimiento del estado de la planta</h2>
-        <p>Registra observaciones, monitorea la recuperación y consulta la línea de tiempo de cada planta.</p>
+        <p>
+          Registra observaciones, monitorea la recuperación y consulta la línea
+          de tiempo de cada planta.
+        </p>
       </div>
 
       <div class="plantas-tabs">
-        <button type="button" class="planta-tab planta-tab-activa">Tomate Cherry</button>
+        <button type="button" class="planta-tab planta-tab-activa">
+          Tomate Cherry
+        </button>
         <button type="button" class="planta-tab">Lechuga</button>
       </div>
 
       <div class="planta-destacada-card">
         <div class="planta-destacada-icono">
-          <svg class="icono-svg icono-svg-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22c5-1 8-6 8-11a8 8 0 0 0-8-8 8 8 0 0 0-8 8c0 5 3 10 8 11z"></path>
+          <svg
+            class="icono-svg icono-svg-lg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M12 22c5-1 8-6 8-11a8 8 0 0 0-8-8 8 8 0 0 0-8 8c0 5 3 10 8 11z"
+            ></path>
             <path d="M12 22V11"></path>
             <path d="M12 11c0-4 2-6 5-7"></path>
           </svg>
@@ -955,11 +1117,17 @@
 
         <div class="planta-destacada-info">
           <h3>Tomate Cherry</h3>
-          <p class="texto-secundario">Tizón temprano - Sembrada el 20 feb 2026</p>
+          <p class="texto-secundario">
+            Tizón temprano - Sembrada el 20 feb 2026
+          </p>
 
           <div class="planta-destacada-tags">
-            <span class="etiqueta-estado etiqueta-recuperacion">En recuperación</span>
-            <span class="etiqueta-estado etiqueta-diagnosticos">3 diagnósticos</span>
+            <span class="etiqueta-estado etiqueta-recuperacion"
+              >En recuperación</span
+            >
+            <span class="etiqueta-estado etiqueta-diagnosticos"
+              >3 diagnósticos</span
+            >
           </div>
         </div>
 
@@ -997,7 +1165,10 @@
         <div class="indicador-barra">
           <p class="texto-secundario">Hidratación</p>
           <div class="barra-fondo">
-            <div class="barra-relleno barra-hidratacion" style="width: 65%"></div>
+            <div
+              class="barra-relleno barra-hidratacion"
+              style="width: 65%"
+            ></div>
           </div>
         </div>
 
@@ -1011,13 +1182,18 @@
         <div class="indicador-barra">
           <p class="texto-secundario">Recuperación de enfermedad</p>
           <div class="barra-fondo">
-            <div class="barra-relleno barra-recuperacion" style="width: 55%"></div>
+            <div
+              class="barra-relleno barra-recuperacion"
+              style="width: 55%"
+            ></div>
           </div>
         </div>
       </div>
 
       <div class="seguimiento-subtabs">
-        <button type="button" class="subtab subtab-activa">Línea del tiempo</button>
+        <button type="button" class="subtab subtab-activa">
+          Línea del tiempo
+        </button>
         <button type="button" class="subtab">Registrar observación</button>
       </div>
 
@@ -1040,6 +1216,227 @@
           </div>
           <div class="linea-tiempo-fecha">28 may 2026</div>
         </article>
+      </div>
+    </section>
+
+     <!--CALCULO DE INSUMOS-->
+    <section class="seccion_insumos">
+      <div class="insumo-header">
+        <div class="insumo-descripcion">
+          <h2>Calculo de Insumo optimizado por IA</h2>
+          <p>Calcula los insumos necesarios y precisos para optimizar costos</p>
+        </div>
+        <button class="btn-escoger-planta">Escoger planta a analizar</button>
+      </div>
+
+      <div class="insumo-contenido">
+        <div class="contenido-imagen">
+          <div class="contenedor-cuadrado">
+            <img
+              src="https://plantandpot.nz/wp-content/uploads/2025/10/Untitled-design-82.jpg"
+              alt="Planta bajo análisis"
+              class="imagen-planta"
+            />
+          </div>
+          <button class="boton-analizar">Analizar insumos</button>
+        </div>
+
+        <div class="insumos-necesarios">
+          <h2>Planta Photos</h2>
+          <p class="subtitulo-insumo">Insumos Necesarios:</p>
+
+          <div class="insumos-seleccionados">
+            <ul>
+              <li>✓ Sustrato de tierra 2.5kg</li>
+              <li>✓ Humus de lombriz 500gr</li>
+              <li>✓ Agua 200ml</li>
+              <li>✓ Perlita 1-2kg</li>
+              <li>✓ Jabón potásico</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--realidad aumentada-->
+
+    <section class="seccion-ar">
+      <div class="ar-header">
+        <h2>Analisis con Realidad Aumentada</h2>
+        <p>
+          Sube una foto de una planta desconocida para identificar el nivel de
+          iluminacion respecto al sol
+        </p>
+      </div>
+
+      <div class="ar-contenido">
+        <div class="columna-izquierda">
+          <div class="cuadro-escaner">
+            <p class="texto-escaner">ESCANER REALIDAD AUMENTADA</p>
+            <img
+              src="assets/images/camara.jpg"
+              alt="Icono de cámara"
+              class="icono-camara"
+            />
+          </div>
+          <button class="btn-subir">Subir imagen</button>
+        </div>
+
+        <div class="columna-derecha">
+          <h3>Nivel de Iluminacion:</h3>
+
+          <div class="lista-iluminacion">
+            <div class="renglon activo">Luz Directa</div>
+            <div class="renglon">Semisombra</div>
+            <div class="renglon">Sombra</div>
+          </div>
+
+          <p class="texto-resultado">
+            Su planta se encuentra en un lugar optimo para colocar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--HISTORIAL CLINICO-->
+    <section class="seccion-historial">
+      <div class="historial-header">
+        <h2>Historial Clinico de una Planta</h2>
+        <p>Visualizar el ciclo de salud de la planta</p>
+      </div>
+
+      <div class="historial-contenido-horizontal">
+        <div class="bloque-izquierdo-foto">
+          <div class="contenedor-imagen-historial">
+            <img
+              src="assets/images/spatipulum.jpg"
+              alt="Spathiphyllum"
+              class="imagen-historial"
+            />
+          </div>
+          <button class="btn-ver-historial">Ver historial de salud</button>
+        </div>
+
+        <div class="bloque-derecho-fases">
+          <h3>Spathiphyllum</h3>
+          <div class="estado-saludable">Saludable</div>
+
+          <div class="flujo-fases">
+            <div class="fase-item">Hojas Caidas</div>
+            <div class="flecha-fase">∨</div>
+
+            <div class="fase-item">Hidratracion Inmersiva</div>
+            <div class="flecha-fase">∨</div>
+
+            <div class="fase-item">Turgencia y Poda</div>
+            <div class="flecha-fase">∨</div>
+
+            <div class="fase-item">Planta Saludable</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--SECCION REPORTES COMUNIDAD -->
+
+    <section class="seccion-reportes">
+      <div class="reportes-header">
+        <h2>Reportes de la Comunidad</h2>
+      </div>
+
+      <div class="grid-reportes">
+        <div class="tarjeta-reporte alerta-roja">
+          <div class="nombre-agricultor">DAVID ALONSO</div>
+          <p class="texto-reporte">
+            Ha reportado presencia de plagas en su área
+          </p>
+        </div>
+
+        <div class="tarjeta-reporte alerta-verde">
+          <div class="nombre-agricultor">JOSE LUIS</div>
+          <p class="texto-reporte">
+            No ha reportado presencia de plagas en su área
+          </p>
+        </div>
+
+        <div class="tarjeta-reporte alerta-roja">
+          <div class="nombre-agricultor">JUAN MIGUEL</div>
+          <p class="texto-reporte">
+            Ha reportado presencia de plagas en su área
+          </p>
+        </div>
+
+        <div class="tarjeta-reporte alerta-roja">
+          <div class="nombre-agricultor">JUAN MIGUEL</div>
+          <p class="texto-reporte">
+            Ha reportado presencia de plagas en su área
+          </p>
+        </div>
+
+        <div class="tarjeta-reporte alerta-roja">
+          <div class="nombre-agricultor">EDWIN CONTRERAS</div>
+          <p class="texto-reporte">
+            Ha reportado presencia de plagas en su área
+          </p>
+        </div>
+
+        <div class="tarjeta-reporte alerta-verde">
+          <div class="nombre-agricultor">JOSE LUIS</div>
+          <p class="texto-reporte">
+            No ha reportado presencia de plagas en su área
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--COMUNIDAD INTERCAMBIO-->
+
+    <section class="seccion-comunidad">
+      <div class="comunidad-header">
+        <h2>Comunidad de Venta e Intercambio</h2>
+        <p>Identifica el articulo de tu gusto y contacta con el usuario</p>
+      </div>
+
+      <div class="comunidad-productos-flex">
+        <div class="tarjeta-articulo">
+          <div class="etiqueta-usuario">Juan Alonso - Set de Jardineria</div>
+          <div class="contenedor-imagen-articulo">
+            <img
+              src="assets/images/set1.jpg"
+              alt="Set de Jardinería"
+              class="imagen-articulo"
+            />
+          </div>
+          <button class="btn-contactar">Contactar</button>
+        </div>
+
+        <div class="tarjeta-articulo">
+          <div class="etiqueta-usuario">
+            Javier Mendoza - Pala de jardineria
+          </div>
+          <div class="contenedor-imagen-articulo">
+            <img
+              src="assets/images/set2.jpg"
+              alt="Pala de jardinería"
+              class="imagen-articulo"
+            />
+          </div>
+          <button class="btn-contactar">Contactar</button>
+        </div>
+
+        <div class="tarjeta-articulo">
+          <div class="etiqueta-usuario">
+            Javier Olivera - Carrerilla de metal
+          </div>
+          <div class="contenedor-imagen-articulo">
+            <img
+              src="assets/images/set3.jpg"
+              alt="Carretilla de metal"
+              class="imagen-articulo"
+            />
+          </div>
+          <button class="btn-contactar">Contactar</button>
+        </div>
       </div>
     </section>
 

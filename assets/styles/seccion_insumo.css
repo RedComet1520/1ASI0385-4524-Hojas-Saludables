@@ -1,12 +1,35 @@
+<<<<<<< HEAD
 /* --- CONFIGURACIÓN GENERAL --- */
 .seccion_insumos {
+=======
+.seccion-insumo {
   font-family: Arial, sans-serif;
   max-width: 950px;
   margin: 40px auto;
   padding: 20px;
 }
 
+.insumo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.insumo-descripcion/ .seccion-insumo {
+>>>>>>> 0035b879dad5ed1fa6b94e34d4e68bdd0ac5c990
+  font-family: Arial, sans-serif;
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+<<<<<<< HEAD
 /* --- CABECERA DE LA SECCIÓN --- */
+=======
+>>>>>>> 0035b879dad5ed1fa6b94e34d4e68bdd0ac5c990
 .insumo-header {
   display: flex;
   justify-content: space-between;
@@ -28,7 +51,10 @@
   margin: 0;
 }
 
+<<<<<<< HEAD
 /* --- BOTÓN ESCOGER PLANTA --- */
+=======
+>>>>>>> 0035b879dad5ed1fa6b94e34d4e68bdd0ac5c990
 .btn-escoger-planta {
   background-color: #e8f5e9;
   color: #1b5e20;
@@ -39,6 +65,7 @@
   cursor: pointer;
   font-size: 0.95rem;
   outline: none;
+<<<<<<< HEAD
   transition: background-color 0.2s ease;
 }
 
@@ -57,6 +84,19 @@
 .contenido-imagen {
   flex: 1;
   background-color: #2e7d32; /* El fondo verde que faltaba */
+=======
+}
+
+.insumo-contenido-horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+.columna-verde-accion {
+  flex: 1;
+  background-color: #2e7d32;
+>>>>>>> 0035b879dad5ed1fa6b94e34d4e68bdd0ac5c990
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,8 +121,12 @@
   object-fit: cover;
 }
 
+<<<<<<< HEAD
 /* BOTÓN ANALIZAR INSUMOS (BLANCO INTERACTIVO) */
 .boton-analizar {
+=======
+.boton-interactivo-blanco {
+>>>>>>> 0035b879dad5ed1fa6b94e34d4e68bdd0ac5c990
   background-color: transparent;
   color: #ffffff;
   border: 2px solid #ffffff;
@@ -90,6 +134,7 @@
   border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
+<<<<<<< HEAD
   transition: transform 0.3s ease;
 }
 
@@ -101,6 +146,18 @@
 .insumos-necesarios {
   flex: 1;
   background-color: rgba(255, 255, 255, 0.4) !important; /* Fondo translúcido */
+=======
+  transition: transform 0.2s ease;
+}
+
+.boton-interactivo-blanco:hover {
+  transform: scale(1.05);
+}
+
+.columna-derecha-resultados {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+>>>>>>> 0035b879dad5ed1fa6b94e34d4e68bdd0ac5c990
   border: 1px solid #e0e0e0;
   border-radius: 16px;
   padding: 30px;
@@ -108,6 +165,7 @@
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 .insumos-necesarios h2 {
   margin: 0 0 10px 0;
   font-size: 1.8rem;
@@ -115,13 +173,139 @@
 }
 
 .subtitulo-insumo {
+=======
+.columna-derecha-resultados h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+}
+
+.subtitulo-seccion-interna {
   font-weight: bold;
   color: #555555;
   margin: 0 0 16px 0;
   font-size: 1rem;
 }
 
+.insumos-seleccionados ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.insumos-seleccionados li {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 12px;
+}
+h2 {
+  color: #111111;
+  font-size: 1.8rem;
+  margin: 0 0 8px 0;
+}
+
+.insumo-descripcion p {
+  color: #777777;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.btn-escoger-planta {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+  border: 1px solid #a5d6a7;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.btn-escoger-planta option {
+  background-color: #ffffff;
+  color: #333333;
+  font-weight: normal;
+}
+
+.btn-escoger-planta option[disabled] {
+  color: #888888;
+}
+
+.insumo-contenido-horizontal {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+.columna-verde-accion {
+  flex: 1;
+  background-color: #2e7d32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.contenedor-cuadrado {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+  margin-bottom: 20px;
+}
+
+.imagen-planta {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boton-interactivo-blanco {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 12px 28px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.boton-interactivo-blanco:hover {
+  transform: scale(1.05);
+}
+
+.columna-derecha-resultados {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.columna-derecha-resultados h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+}
+
+.subtitulo-seccion-interna {
+>>>>>>> 0035b879dad5ed1fa6b94e34d4e68bdd0ac5c990
+  font-weight: bold;
+  color: #555555;
+  margin: 0 0 16px 0;
+  font-size: 1rem;
+}
+
+<<<<<<< HEAD
 /* --- LISTA DE INSUMOS --- */
+=======
+>>>>>>> 0035b879dad5ed1fa6b94e34d4e68bdd0ac5c990
 .insumos-seleccionados ul {
   list-style: none;
   padding: 0;

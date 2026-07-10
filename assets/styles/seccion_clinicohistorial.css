@@ -19,8 +19,13 @@
 
 .historial-contenido-horizontal {
   display: flex;
+<<<<<<< HEAD
   flex-wrap: nowrap;
   gap: 40px;
+=======
+  flex-wrap: nowrap; 
+  gap: 40px; 
+>>>>>>> 0035b879dad5ed1fa6b94e34d4e68bdd0ac5c990
 }
 
 .bloque-izquierdo-foto {
@@ -56,7 +61,11 @@
 }
 
 .btn-ver-historial:hover {
+<<<<<<< HEAD
   transform: scale(1.02);
+=======
+  transform: scale(1.02); 
+>>>>>>> 0035b879dad5ed1fa6b94e34d4e68bdd0ac5c990
 }
 
 .bloque-derecho-fases {
@@ -94,7 +103,11 @@
 
 .fase-item {
   width: 80%;
+<<<<<<< HEAD
   background-color: #ffb74d;
+=======
+  background-color: #ffb74d; 
+>>>>>>> 0035b879dad5ed1fa6b94e34d4e68bdd0ac5c990
   color: #111111;
   border: 1px solid #f57c00;
   padding: 10px;
